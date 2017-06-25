@@ -3834,6 +3834,38 @@ Log         normal
 End
 
 #COMMAND
+Name        autosac
+Code        do_autosac
+Position    resting
+Level       0
+Log         normal
+End
+
+#COMMAND
+Name        autoloot
+Code        do_autoloot
+Position    resting
+Level       0
+Log         normal
+End
+
+#COMMAND
+Name        autoexit
+Code        do_autoexit
+Position    resting
+Level       0
+Log         normal
+End
+
+#COMMAND
+Name        automap
+Code        do_automap
+Position    resting
+Level       0
+Log         normal
+End
+
+#COMMAND
 Name        setprice
 Code        do_setprice
 Position    dead

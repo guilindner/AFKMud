@@ -8946,7 +8946,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         common~
 Type         Tongue
 Info         0
@@ -8957,7 +8957,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         dwarven~
 Type         Tongue
 Info         0
@@ -8968,7 +8968,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         elvish~
 Type         Tongue
 Info         0
@@ -8979,7 +8979,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         gith~
 Type         Tongue
 Info         0
@@ -8990,7 +8990,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         gnomish~
 Type         Tongue
 Info         0
@@ -9001,7 +9001,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         goblin~
 Type         Tongue
 Info         0
@@ -9012,7 +9012,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         halfling~
 Type         Tongue
 Info         0
@@ -9023,7 +9023,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         insectoid~
 Type         Tongue
 Info         0
@@ -9034,7 +9034,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         minotaur~
 Type         Tongue
 Info         0
@@ -9045,7 +9045,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         ogre~
 Type         Tongue
 Info         0
@@ -9056,7 +9056,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         orcish~
 Type         Tongue
 Info         0
@@ -9067,7 +9067,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         pixie~
 Type         Tongue
 Info         0
@@ -9078,7 +9078,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         reptile~
 Type         Tongue
 Info         0
@@ -9089,7 +9089,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         sahuagin~
 Type         Tongue
 Info         0
@@ -9100,7 +9100,7 @@ Dammsg       ~
 Minlevel     1
 End
 
-#SKILL
+SKILL
 Name         trollese~
 Type         Tongue
 Info         0

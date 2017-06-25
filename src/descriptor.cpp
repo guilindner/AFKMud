@@ -3094,6 +3094,7 @@ void descriptor_data::nanny( string & argument )
                return;
          }
 
+         write_to_buffer( "HERE CHOOSE RACE???" );
          /*
           * ANSI defaults to on now. This is 2003 folks. Grow up. Samson 7-24-03 
           */

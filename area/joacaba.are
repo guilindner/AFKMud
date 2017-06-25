@@ -1,0 +1,156 @@
+#AFKAREA
+#AREADATA
+Version         1
+Name            Joacaba~
+Author          gremling~
+Vnums           30000 30999
+Continent       one~
+Coordinates     919 935
+Dates           754272000 1417996800
+Ranges          0 115 0 115
+ResetMsg        O carnaval acabou e toda a cidade voltou ao normal...~
+ResetFreq       20
+Climate         2 2 2
+Treasure        20 74 85 93 20 50 60 75
+#ENDAREADATA
+
+#MOBILE
+Vnum      30000
+Keywords  Dhiego barbeiro~
+Race      human~
+Class     Warrior~
+Gender    male~
+Position  standing~
+DefPos    standing~
+Short     O grande barbeiro Dhiego~
+Long      Dhiego, dono da Taberna do Barbeiro.
+~
+Desc      Um rapaz simpatico, usando um avental de couro cheio de ferramentas.
+~
+Nattacks  2.000000
+Stats1    -700 -1 0 0 150 100
+Stats2    5 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc nowander stayarea~
+#ENDMOBILE
+
+#MOBILE
+Vnum      30001
+Keywords  Narciso
+Race      half-orc~
+Class     Warrior~
+Gender    male~
+Position  standing~
+DefPos    standing~
+Short     O vendedor de suplementos Narciso~
+Long      Narciso, vendedor de suplementos e fisioculturista nas horas vagas.
+~
+Desc      Um cara forte! Com violencia de ogro.
+~
+Nattacks  2.000000
+Stats1    -700 -1 0 0 150 100
+Stats2    5 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc nowander stayarea~
+#ENDMOBILE
+
+#MOBILE
+Vnum      30002
+Keywords  Ricardo~
+Race      human~
+Class     Warrior~
+Gender    male~
+Position  standing~
+DefPos    standing~
+Short     O vendedor de suplementos Ricardo~
+Long      Ricardo, vendedor de suplementos e mestre do photoshop.
+~
+Desc      Olhos cansados de tanto fazer montagens no photoshop.
+~
+Nattacks  2.000000
+Stats1    -700 -1 0 0 150 100
+Stats2    5 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc nowander stayarea~
+#ENDMOBILE
+
+#ROOM
+Vnum      30000
+Name      Taberna do Barbeiro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Voce esta na Taberna do Barbeiro, um ambiente agradavel para conversar,
+jogar rpg, ler livros e ate fazer a barba! Nao se esqueca de pedir uma cerveja.
+~
+#EXIT
+Direction south~
+ToRoom    30001
+Desc      Rua Felipe Schmidt.
+~
+#ENDEXIT
+Reset M 30000 1 30000 -1 -1 -1 100
+#ENDROOM
+
+#ROOM
+Vnum      30001
+Name      Rua Felipe Schmidt~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada, cheia de lojas. Ao norte esta a famosa Taberna do
+Barbeiro.
+~
+#EXIT
+Direction north~
+ToRoom    30000
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30002
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    50000
+ToCoords  918 935
+Flags     overland nomob~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum      30002
+Name      Corpo e Treino~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      A loja de suplementos mais completa da cidade! Pena que nunca
+tem desconto para os amigos.
+~
+#EXIT
+Direction north~
+ToRoom    30001
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    50000
+ToCoords  918 935
+Flags     overland nomob~
+#ENDEXIT
+Reset M 30001 1 30002 -1 -1 -1 100
+Reset M 30002 1 30002 -1 -1 -1 100
+#ENDROOM
+
+#ENDAREA

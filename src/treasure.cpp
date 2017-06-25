@@ -2249,8 +2249,10 @@ void generate_treasure( char_data * ch, obj_data * corpse )
    /*
     * Rolling for the initial check to see if we should be generating anything at all 
     */
-   tchance = number_range( 1, 100 );
-
+   tchance = number_range( 75, 85 ); //Gui - Change back to 1, 100
+   //DEBUG treasure
+   ch->printf("DEBUG! tchance=%d, tg_nothing=%d, tg_gold=%d, tg_item=%d \r\n",
+              tchance, area->tg_nothing,area->tg_gold,area->tg_item);
    /*
     * 1-20% chance of zilch 
     */

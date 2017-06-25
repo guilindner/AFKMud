@@ -28,7 +28,7 @@ Long      A black rook stands here, prepared for battle.
 Desc      It reminds of you a stone golem, but quite a bit smaller.
 ~
 Nattacks  2.000000
-Stats1    -700 0 0 0 150 100
+Stats1    -700 -1 0 0 150 100
 Stats2    5 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
@@ -49,7 +49,7 @@ Long      There is a scraggly knight dressed in black here.
 Desc      This is most certainly not the Black Knight of legendary fame.
 ~
 Nattacks  0.000000
-Stats1    -500 0 0 0 150 100
+Stats1    -500 -1 0 0 150 100
 Stats2    3 17 7 9 1 7 0
 Speaks    common~
 Speaking  common~
@@ -71,7 +71,7 @@ Long      There is a bishop dressed in black standing here.
 Desc      Hmm, maybe it's an arch bishop.  Or an arch arch bishop.
 ~
 Nattacks  0.000000
-Stats1    -500 0 0 0 150 100
+Stats1    -500 -1 0 0 150 100
 Stats2    3 18 5 9 1 7 0
 Speaks    common~
 Speaking  common~
@@ -93,7 +93,7 @@ Long      There is a queen dressed in black standing here.
 Desc      She looks rather fearsome.
 ~
 Nattacks  0.000000
-Stats1    -1000 500 0 0 150 100
+Stats1    -1000 -1 0 0 150 100
 Stats2    8 10 1 24 3 4 0
 Speaks    common~
 Speaking  common~
@@ -117,7 +117,7 @@ Desc      He is a far cry from the white haired wizened old man you might expect
 looks as though he could put up a good fight.
 ~
 Nattacks  2.000000
-Stats1    -1000 1000 0 0 150 100
+Stats1    -1000 -1 0 0 150 100
 Stats2    12 6 2 48 2 7 1
 Speaks    common~
 Speaking  common~
@@ -141,7 +141,7 @@ Desc      Though this scrawny fighter is not an impressive sight, he is obedient
 master.
 ~
 Nattacks  0.000000
-Stats1    -400 0 0 0 150 100
+Stats1    -400 -1 0 0 150 100
 Stats2    1 20 9 1 1 5 0
 Speaks    common~
 Speaking  common~
@@ -164,7 +164,7 @@ Desc      It's a three foot tall humanoid that seems rather menacing for its siz
 In the middle of its head are four tentacles with sharp points.
 ~
 Nattacks  0.000000
-Stats1    -450 50 0 0 150 100
+Stats1    -450 -1 0 0 150 100
 Stats2    2 17 6 4 1 6 2
 Speaks    common~
 Speaking  common~
@@ -188,7 +188,7 @@ Desc      It is short stocky guy dressed in clashing colors, spewing gutteral so
 and interjections continuously.
 ~
 Nattacks  0.000000
-Stats1    -600 0 0 0 150 100
+Stats1    -600 -1 0 0 150 100
 Stats2    3 16 5 9 2 4 0
 Speaks    common~
 Speaking  common~
@@ -221,7 +221,7 @@ notices your intense scrutiny, he looks at you coldly, until you are
 forced to look away.
 ~
 Nattacks  0.000000
-Stats1    400 40 0 0 150 100
+Stats1    400 -1 0 0 150 100
 Stats2    5 10 6 10 2 4 0
 Speaks    common~
 Speaking  common~
@@ -243,7 +243,7 @@ Long      A sapling stands here eye to eye with you.
 Desc      Its roots are rather petite, and small parts of them are above ground.
 ~
 Nattacks  4.000000
-Stats1    0 0 0 0 150 100
+Stats1    0 -1 0 0 150 100
 Stats2    6 13 4 18 1 2 1
 Speaks    common~
 Speaking  common~
@@ -269,7 +269,7 @@ and forth continually.  A number of tentacles are juggling a dizzying
 blur of objects.
 ~
 Nattacks  0.000000
-Stats1    0 500 0 0 150 100
+Stats1    0 -1 0 0 150 100
 Stats2    8 11 3 24 2 5 1
 Speaks    common~
 Speaking  common~
@@ -291,7 +291,7 @@ Long      An ugly butterfly-like thing is here, muttering about its problems.
 Desc      It is ugly, and unfriendly.
 ~
 Nattacks  1.000000
-Stats1    -1000 10 0 0 150 100
+Stats1    -1000 -1 0 0 150 100
 Stats2    1 20 9 6 1 3 0
 Speaks    common~
 Speaking  common~
@@ -320,7 +320,7 @@ Desc      It seems harmless enough, although according to ancient legend, they
 cause people to slip and fall.
 ~
 Nattacks  0.000000
-Stats1    -400 0 0 0 150 100
+Stats1    -400 -1 0 0 150 100
 Stats2    2 19 7 0 1 4 0
 Speaks    common~
 Speaking  common~
@@ -343,7 +343,7 @@ Desc      Though this scrawny fighter is not an impressive sight, he is obedient
 master.
 ~
 Nattacks  0.000000
-Stats1    300 0 0 0 150 100
+Stats1    300 -1 0 0 150 100
 Stats2    1 20 9 1 1 5 0
 Speaks    common~
 Speaking  common~
@@ -366,7 +366,7 @@ Desc      It reminds of you a stone golem, but quite a bit smaller.  He matches 
 white marble quite nicely.
 ~
 Nattacks  2.000000
-Stats1    700 0 0 0 150 100
+Stats1    700 -1 0 0 150 100
 Stats2    5 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
@@ -388,7 +388,7 @@ Long      There is a scraggly knight dressed in white here.
 Desc      You're not so sure that you'd want *him* to come to your rescue.
 ~
 Nattacks  0.000000
-Stats1    600 0 0 0 150 100
+Stats1    600 -1 0 0 150 100
 Stats2    3 17 7 9 1 7 0
 Speaks    common~
 Speaking  common~
@@ -411,7 +411,7 @@ Long      There is a bishop dressed in white standing here.
 Desc      Hmm, maybe it's an arch bishop.  Or an arch arch bishop.
 ~
 Nattacks  0.000000
-Stats1    500 0 0 0 150 100
+Stats1    500 -1 0 0 150 100
 Stats2    3 18 5 9 1 7 0
 Speaks    common~
 Speaking  common~
@@ -433,7 +433,7 @@ Long      There is a queen dressed in white standing here.
 Desc      She looks rather fearsome.
 ~
 Nattacks  0.000000
-Stats1    1000 500 0 0 150 100
+Stats1    1000 -1 0 0 150 100
 Stats2    8 10 1 24 3 4 0
 Speaks    common~
 Speaking  common~
@@ -456,7 +456,7 @@ Desc      He is a far cry from the white haired wizened old man you might expect
 looks as though he could put up a good fight.
 ~
 Nattacks  2.000000
-Stats1    1000 1000 0 0 150 100
+Stats1    1000 -1 0 0 150 100
 Stats2    12 6 2 48 2 7 1
 Speaks    common~
 Speaking  common~
@@ -478,7 +478,7 @@ Long      The Jabberwocky stands here, prepared to maul you.
 Desc      It is big, and alien in appearance.  Probably not here for a cup of tea.
 ~
 Nattacks  3.000000
-Stats1    -900 0 0 0 150 100
+Stats1    -900 -1 0 0 150 100
 Stats2    14 4 0 56 1 8 2
 Speaks    common~
 Speaking  common~
@@ -502,7 +502,7 @@ Long      An elven cleric is here, looking for someone to help.
 Desc      He is dressed in white robes covered in red crosses.
 ~
 Nattacks  0.000000
-Stats1    1000 0 0 0 150 100
+Stats1    1000 -1 0 0 150 100
 Stats2    7 14 4 14 2 4 2
 Speaks    common~
 Speaking  common~
@@ -526,7 +526,7 @@ Desc      The Flame flickers almost imperceptibly about you.  You can barely fee
 warmth, so gentle is The Flame.
 ~
 Nattacks  3.000000
-Stats1    900 0 0 0 150 100
+Stats1    900 -1 0 0 150 100
 Stats2    14 3 0 56 3 3 4
 Speaks    common~
 Speaking  common~
@@ -550,7 +550,7 @@ Desc      Well, it looks beastly.  And oily.  It's black, and shiny, and oozes
 slime as it goes...hard to be more specific than that.
 ~
 Nattacks  1.000000
-Stats1    800 0 0 0 150 100
+Stats1    800 -1 0 0 150 100
 Stats2    10 10 2 40 2 6 3
 Speaks    common~
 Speaking  common~
@@ -573,7 +573,7 @@ Desc      Well, it looks beastly.  And oily.  It's black, and shiny, and oozes
 slime as it goes...hard to be more specific than that.
 ~
 Nattacks  0.000000
-Stats1    800 0 0 0 150 100
+Stats1    800 -1 0 0 150 100
 Stats2    10 10 2 40 2 6 3
 Speaks    common~
 Speaking  common~
@@ -593,7 +593,7 @@ Short     The Delivery Elf~
 Long      An elf is here, making deliveries of tasty bread.
 ~
 Nattacks  0.000000
-Stats1    800 49 0 0 150 100
+Stats1    800 -1 0 0 150 100
 Stats2    10 10 2 40 2 6 3
 Speaks    common~
 Speaking  common~
@@ -635,7 +635,7 @@ Short     An Elf~
 Long      An elf is here, working diligently.
 ~
 Nattacks  0.000000
-Stats1    800 0 0 0 150 100
+Stats1    800 -1 0 0 150 100
 Stats2    10 10 2 40 2 6 3
 Speaks    common~
 Speaking  common~
@@ -658,7 +658,7 @@ Desc      Looks like the obligatory invisible monster for this area.  He has tha
 confident, artificial smile that means he knows too much about you.
 ~
 Nattacks  0.000000
-Stats1    600 49 0 0 150 100
+Stats1    600 -1 0 0 150 100
 Stats2    4 15 3 8 1 9 0
 Speaks    common~
 Speaking  common~
@@ -681,7 +681,7 @@ Long      A plump pigeon is wandering here, oblivious to your presence.
 Desc      Dinner on the table....
 ~
 Nattacks  0.000000
-Stats1    0 10 0 0 150 100
+Stats1    0 -1 0 0 150 100
 Stats2    1 20 9 1 1 4 0
 Speaks    common~
 Speaking  common~
@@ -704,7 +704,7 @@ Desc      The lord of the tower is a wizened old elf with wild tangles of hair
 and a somewhat crazed expression on his face.
 ~
 Nattacks  3.000000
-Stats1    1000 0 0 0 150 100
+Stats1    1000 -1 0 0 150 100
 Stats2    47 0 -7 200 3 6 6
 Speaks    common~
 Speaking  common~
@@ -3558,6 +3558,13 @@ Desc      You see the gated entrance to the tower.
 ~
 Keywords  gate~
 Flags     isdoor closed~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    50000
+ToCoords  916 939
+Flags     overland nomob~
 #ENDEXIT
 
 Reset D 6069 3 1 100 -2

@@ -1607,7 +1607,7 @@ void dam_message( char_data * ch, char_data * victim, double dam, unsigned int d
    {
       snprintf( buf1, 256, "$n %s $N%c", vp, punct );
       snprintf( buf2, 256, "You %s $N%c", vs, punct );
-      snprintf( buf3, 256, "$n %s you%c", vp, punct );
+      snprintf( buf3, 256, "&R$n &w%s &cyou&w%c [&R-%0.f&w]", vp, punct, dam );
    }
    else if( dt > ( unsigned int )TYPE_HIT && is_wielding_poisoned( ch ) )
    {
@@ -1682,7 +1682,7 @@ void dam_message( char_data * ch, char_data * victim, double dam, unsigned int d
          attack = attack_table[0];
       }
       snprintf( buf1, 256, "$n's %s %s $N%c", attack, vp, punct );
-      snprintf( buf2, 256, "Your %s %s $N%c", attack, vp, punct );
+      snprintf( buf2, 256, "&cYour &w%s %s &R$N&w%c [&R%0.f&w]", attack, vp, punct, dam );
       snprintf( buf3, 256, "$n's %s %s you%c", attack, vp, punct );
    }
 

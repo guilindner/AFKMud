@@ -2353,9 +2353,11 @@ CMDF( do_slist )
    if( lowlev > hilev )
       lowlev = hilev;
 
-   ch->set_pager_color( AT_MAGIC );
+   ch->set_pager_color( AT_CYAN );
    ch->pagerf( "%s Spell & Skill List\r\n", class_table[cl]->who_name );
-   ch->pager( "--------------------------------------\r\n" );
+   ch->pager( "-------------------------------------------------\r\n" );
+   ch->pager( "Level | Type    | Name                 | Practice\r\n" );
+   ch->pager( "-------------------------------------------------\r\n" );
 
    for( i = lowlev; i <= hilev; ++i )
    {
@@ -2385,11 +2387,11 @@ CMDF( do_slist )
             if( !lFound )
             {
                lFound = 1;
-               ch->pagerf( "Level %d\r\n", i );
+               //ch->pagerf( "Level %d\r\n", i ); gui
             }
-
-            ch->pagerf( "%7s: %20.20s \t Current: %-3d Max: %-3d  MinPos: %s \r\n",
-                        skn, skill_table[sn]->name, ch->pcdata->learned[sn], skill_table[sn]->skill_adept[xx], npc_position[skill_table[sn]->minimum_position] );
+            ch->pagerf( " %2d   | %7s | %20.20s |  %2d/%2d \r\n", i, skn, skill_table[sn]->name, ch->pcdata->learned[sn], skill_table[sn]->skill_adept[xx] );
+            //ch->pagerf( "%7s: %20.20s \t Current: %-3d Max: %-3d  MinPos: %s \r\n",
+            //            skn, skill_table[sn]->name, ch->pcdata->learned[sn], skill_table[sn]->skill_adept[xx], npc_position[skill_table[sn]->minimum_position] );
          }
       }
    }

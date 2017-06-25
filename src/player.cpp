@@ -226,6 +226,48 @@ CMDF( do_smartsac )
    }
 }
 
+CMDF( do_autoloot )
+{
+   if( ch->has_pcflag( PCFLAG_AUTOLOOT ) )
+   {
+      ch->unset_pcflag( PCFLAG_AUTOLOOT );
+      ch->print( "Autoloot off.\r\n" );
+   }
+   else
+   {
+      ch->set_pcflag( PCFLAG_AUTOLOOT );
+      ch->print( "Autoloot on.\r\n" );
+   }
+}
+
+CMDF( do_automap )
+{
+   if( ch->has_pcflag( PCFLAG_AUTOMAP ) )
+   {
+      ch->unset_pcflag( PCFLAG_AUTOMAP );
+      ch->print( "Automap off.\r\n" );
+   }
+   else
+   {
+      ch->set_pcflag( PCFLAG_AUTOMAP );
+      ch->print( "Automap on.\r\n" );
+   }
+}
+
+CMDF( do_autoexit )
+{
+   if( ch->has_pcflag( PCFLAG_AUTOEXIT ) )
+   {
+      ch->unset_pcflag( PCFLAG_AUTOEXIT );
+      ch->print( "Autoexit off.\r\n" );
+   }
+   else
+   {
+      ch->set_pcflag( PCFLAG_AUTOEXIT );
+      ch->print( "Autoexit on.\r\n" );
+   }
+}
+
 /*
  * 'Split' originally by Gnort, God of Chaos.
  */
@@ -1934,7 +1976,33 @@ CMDF( do_score )
    snprintf( s3, 16, "%s", ch->color_str( AT_SCORE3 ) );
    snprintf( s4, 16, "%s", ch->color_str( AT_SCORE4 ) );
    snprintf( s5, 16, "%s", ch->color_str( AT_SCORE5 ) );
-
+   
+   ch->printf( "+----------------------------------------------------------+\r\n");
+   ch->printf( "|Name/Title: %10s%20s    %2d years old |\r\n", ch->name, ch->pcdata->title, ch->get_age() );
+   ch->printf( "+==============+====================+======================+\r\n");
+   ch->printf( "|Level: %6d |Race : %12s |      SOMETHING       |\r\n",ch->level, capitalize( npc_race[ch->race] ));
+   ch->printf( "|Armor: %6d |Class: %12s | Some: thing          |\r\n", ch->GET_AC(), capitalize( npc_class[ch->Class] ));
+   ch->printf( "|Align: %6d |Sex  : %12s | Some: else           |\r\n", ch->alignment, capitalize( npc_sex[ch->sex] ) );
+   ch->printf( "+==============+====================+======================+\r\n");
+   ch->printf( "|Str: %2d %2d    |Hitroll: %4d | \r\n",ch->perm_str, ch->get_curr_str() - ch->perm_str, ch->GET_HITROLL());
+   ch->printf( "|Dex: %2d %2d    |Damroll: %4d | \r\n",ch->perm_dex, ch->get_curr_dex() - ch->perm_dex, ch->GET_DAMROLL());
+   ch->printf( "|Con: %2d %2d    |\r\n",ch->perm_con, ch->get_curr_con() - ch->perm_con);
+   ch->printf( "|Int: %2d %2d    |\r\n",ch->perm_int, ch->get_curr_int() - ch->perm_int);
+   ch->printf( "|Wis: %2d %2d    |\r\n",ch->perm_wis, ch->get_curr_wis() - ch->perm_wis);
+   ch->printf( "|Cha: %2d %2d    |\r\n",ch->perm_cha, ch->get_curr_cha() - ch->perm_cha);
+   ch->printf( "+==============+====================+======================+\r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "+==============+====================+======================+\r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "| \r\n");
+   ch->printf( "+----------------------------------------------------------+\r\n");
+   
+/*
    ch->printf( "%sScore for %s%s\r\n", s1, ch->name, ch->pcdata->title );
    ch->printf( "%s--------------------------------------------------------------------------------\r\n", s5 );
 
@@ -1950,50 +2018,28 @@ CMDF( do_score )
    ch->printf( "%sAlign: %s%-15d %sTo Hit   : %s%s%-9d       %sAutosac  %s(%s%s%s)\r\n",
                s2, s3, ch->alignment, s2, s3, ch->GET_HITROLL(  ) > 0 ? "+" : "", ch->GET_HITROLL(  ), s2, s1, s3, ch->has_pcflag( PCFLAG_AUTOSAC ) ? "X" : " ", s1 );
 
-   if( ch->level < 10 )
-   {
-      ch->printf( "%sSTR  : %s%-15.15s %sTo Dam   : %s%s%-9d       %sSmartsac %s(%s%s%s)\r\n",
-                  s2, s3, attribtext( ch->get_curr_str(  ) ).c_str(  ), s2, s3, ch->GET_DAMROLL(  ) > 0 ? "+" : "",
-                  ch->GET_DAMROLL(  ), s2, s1, s3, ch->has_pcflag( PCFLAG_SMARTSAC ) ? "X" : " ", s1 );
+  ch->printf( "%sSTR  : %s%-2d%s/%s%-12d %sTo Dam   : %s%s%-9d       %sSmartsac %s(%s%s%s)\r\n",
+              s2, s3, ch->get_curr_str(  ), s1, s4, ch->perm_str, s2, s3, ch->GET_DAMROLL(  ) > 0 ? "+" : " ",
+              ch->GET_DAMROLL(  ), s2, s1, s3, ch->has_pcflag( PCFLAG_SMARTSAC ) ? "X" : " ", s1 );
 
-      ch->printf( "%sINT  : %s%-15.15s %sAC       : %s%s%d\r\n", s2, s3, attribtext( ch->get_curr_int(  ) ).c_str(  ), s2, s3, ch->GET_AC(  ) > 0 ? "+" : "", ch->GET_AC(  ) );
+  ch->printf( "%sINT  : %s%-2d%s/%s%-12d %sAC       : %s%s%d              %sAutomap  %s(%s%s%s)\r\n",
+              s2, s3, ch->get_curr_int(  ), s1, s4, ch->perm_int, s2, s3, ch->GET_AC(  ) > 0 ? "+" : "",
+              ch->GET_AC(  ), s2, s1, s3, ch->has_pcflag( PCFLAG_AUTOMAP ) ? "X" : " ", s1 );
 
-      ch->printf( "%sWIS  : %s%-15.15s %sWimpy    : %s%d\r\n", s2, s3, attribtext( ch->get_curr_wis(  ) ).c_str(  ), s2, s3, ch->wimpy );
+  ch->printf( "%sWIS  : %s%-2d%s/%s%-12d %sWimpy    : %s%d\r\n", s2, s3, ch->get_curr_wis(  ), s1, s4, ch->perm_wis, s2, s3, ch->wimpy );
 
-      ch->printf( "%sDEX  : %s%-15.15s %sExp      : %s%d\r\n", s2, s3, attribtext( ch->get_curr_dex(  ) ).c_str(  ), s2, s3, ch->exp );
+  ch->printf( "%sDEX  : %s%-2d%s/%s%-12d %sExp      : %s%d\r\n", s2, s3, ch->get_curr_dex(  ), s1, s4, ch->perm_dex, s2, s3, ch->exp );
 
-      ch->printf( "%sCON  : %s%-15.15s %sGold     : %s%d\r\n", s2, s3, attribtext( ch->get_curr_con(  ) ).c_str(  ), s2, s3, ch->gold );
+  ch->printf( "%sCON  : %s%-2d%s/%s%-12d %sGold     : %s%d\r\n", s2, s3, ch->get_curr_con(  ), s1, s4, ch->perm_con, s2, s3, ch->gold );
 
-      ch->printf( "%sCHA  : %s%-15.15s %sWeight   : %s%d%s/%s%d\r\n",
-                  s2, s3, attribtext( ch->get_curr_cha(  ) ).c_str(  ), s2, s3, ch->carry_weight, s1, s4, ch->can_carry_w(  ) );
+  ch->printf( "%sCHA  : %s%-2d%s/%s%-12d %sWeight   : %s%d%s/%s%d\r\n",
+              s2, s3, ch->get_curr_cha(  ), s1, s4, ch->perm_cha, s2, s3, ch->carry_weight, s1, s4, ch->can_carry_w(  ) );
 
-      ch->printf( "%sLCK  : %s%-15.15s %sItems    : %s%d%s/%s%d\r\n",
-                  s2, s3, attribtext( ch->get_curr_lck(  ) ).c_str(  ), s2, s3, ch->carry_number, s1, s4, ch->can_carry_n(  ) );
-   }
-   else
-   {
-      ch->printf( "%sSTR  : %s%-2d%s/%s%-12d %sTo Dam   : %s%s%-9d       %sSmartsac %s(%s%s%s)\r\n",
-                  s2, s3, ch->get_curr_str(  ), s1, s4, ch->perm_str, s2, s3, ch->GET_DAMROLL(  ) > 0 ? "+" : " ",
-                  ch->GET_DAMROLL(  ), s2, s1, s3, ch->has_pcflag( PCFLAG_SMARTSAC ) ? "X" : " ", s1 );
-
-      ch->printf( "%sINT  : %s%-2d%s/%s%-12d %sAC       : %s%s%d\r\n",
-                  s2, s3, ch->get_curr_int(  ), s1, s4, ch->perm_int, s2, s3, ch->GET_AC(  ) > 0 ? "+" : "", ch->GET_AC(  ) );
-
-      ch->printf( "%sWIS  : %s%-2d%s/%s%-12d %sWimpy    : %s%d\r\n", s2, s3, ch->get_curr_wis(  ), s1, s4, ch->perm_wis, s2, s3, ch->wimpy );
-
-      ch->printf( "%sDEX  : %s%-2d%s/%s%-12d %sExp      : %s%d\r\n", s2, s3, ch->get_curr_dex(  ), s1, s4, ch->perm_dex, s2, s3, ch->exp );
-
-      ch->printf( "%sCON  : %s%-2d%s/%s%-12d %sGold     : %s%d\r\n", s2, s3, ch->get_curr_con(  ), s1, s4, ch->perm_con, s2, s3, ch->gold );
-
-      ch->printf( "%sCHA  : %s%-2d%s/%s%-12d %sWeight   : %s%d%s/%s%d\r\n",
-                  s2, s3, ch->get_curr_cha(  ), s1, s4, ch->perm_cha, s2, s3, ch->carry_weight, s1, s4, ch->can_carry_w(  ) );
-
-      ch->printf( "%sLCK  : %s%-2d%s/%s%-12d %sItems    : %s%d%s/%s%d\r\n",
-                  s2, s3, ch->get_curr_lck(  ), s1, s4, ch->perm_lck, s2, s3, ch->carry_number, s1, s4, ch->can_carry_n(  ) );
-   }
+  ch->printf( "%sLCK  : %s%-2d%s/%s%-12d %sItems    : %s%d%s/%s%d\r\n",
+              s2, s3, ch->get_curr_lck(  ), s1, s4, ch->perm_lck, s2, s3, ch->carry_number, s1, s4, ch->can_carry_n(  ) );
 
    ch->printf( "%sPracs: %s%-15d %sFavor    : %s%d\r\n\r\n", s2, s3, ch->pcdata->practice, s2, s3, ch->pcdata->favor );
-
+*/
    ch->printf( "%sYou are %s.\r\n", s2, npc_position[ch->position] );
 
    if( ch->pcdata->condition[COND_DRUNK] > 10 )

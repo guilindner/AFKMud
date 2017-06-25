@@ -1234,14 +1234,6 @@ CMDF( do_look )
       else
          print_roomname( ch );
 
-      /*
-       * Moved the exits to be under the name of the room 
-       * Yannick 24 september 1997                        
-       * Added AUTOMAP check because it shows them next to the map now if its active 
-       */
-      if( ch->has_pcflag( PCFLAG_AUTOEXIT ) && !ch->has_pcflag( PCFLAG_AUTOMAP ) )
-         do_exits( ch, "auto" );
-
       print_infoflags( ch );
 
       ch->set_color( AT_RMDESC );
@@ -1249,6 +1241,9 @@ CMDF( do_look )
          draw_map( ch, roomdesc( ch ) );
       else
          ch->print( roomdesc( ch ) );
+      
+      if( ch->has_pcflag( PCFLAG_AUTOEXIT ) && !ch->has_pcflag( PCFLAG_AUTOMAP ) )
+         do_exits( ch, "auto" );
 
       if( !ch->isnpc(  ) && ch->hunting )
          do_track( ch, ch->hunting->who->name );

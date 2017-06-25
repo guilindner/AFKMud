@@ -1,3 +1,12 @@
+src/afkmud
+src/o/*
+corpses/*
+player/*
+system/boot.txt
+system/conn.hst
+system/dns.dat
+system/time.dat
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -26,7 +35,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
