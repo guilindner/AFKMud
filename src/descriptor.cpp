@@ -3068,7 +3068,7 @@ void descriptor_data::nanny( string & argument )
          write_to_buffer( "\r\nWhat is your sex? " );
          write_to_buffer( "\r\n(M)ale, (F)emale, (N)euter, or (H)ermaphrodite ?" );
          connected = CON_GET_NEW_SEX;
-         break;
+         return;
 
       case CON_GET_NEW_SEX:
          switch ( argument[0] )
@@ -3093,29 +3093,188 @@ void descriptor_data::nanny( string & argument )
                write_to_buffer( "That's not a gender.\r\nWhat IS your gender? " );
                return;
          }
-
-         write_to_buffer( "HERE CHOOSE RACE???" );
-         /*
-          * ANSI defaults to on now. This is 2003 folks. Grow up. Samson 7-24-03 
-          */
-         ch->set_pcflag( PCFLAG_ANSI );
-         reset_colors( ch );  /* Added for new configurable color code - Samson 3-27-98 */
-         ch->set_pcflag( PCFLAG_BLANK );
-         ch->set_pcflag( PCFLAG_AUTOMAP );
-
-         /*
-          * MSP terminal support. Activate once at creation - Samson 8-21-01 
-          */
-         if( ch->desc->msp_detected )
-            ch->set_pcflag( PCFLAG_MSP );
-
-         write_to_buffer( "Press [ENTER] " );
-         show_title(  );
-         ch->level = 0;
-         ch->position = POS_STANDING;
-         connected = CON_PRESS_ENTER;
+         write_to_buffer( "Choose your race: \r\n" );
+          write_to_buffer( "[A] Human\r\n" );
+          write_to_buffer( "[B] High-Elf\r\n" );
+          write_to_buffer( "[C] Dwarf\r\n" );
+          write_to_buffer( "[D] Halfling\r\n" );
+          write_to_buffer( "[E] Pixie\r\n" );
+          write_to_buffer( "[F] Half-Ogre\r\n" );
+          write_to_buffer( "[G] Half-Orc\r\n" );
+          write_to_buffer( "[H] Half-Troll\r\n" );
+          write_to_buffer( "[I] Gith\r\n" );
+          write_to_buffer( "[J] Minotaur\r\n" );
+          write_to_buffer( "[K] Duergar\r\n" );
+          write_to_buffer( "[L] Centaur\r\n" );
+          write_to_buffer( "[M] Iguanadon\r\n" );
+          write_to_buffer( "[N] Gnome\r\n" );
+          write_to_buffer( "[O] Drow\r\n" );
+          write_to_buffer( "[P] Wield-Elf\r\n" );
+          write_to_buffer( "[Q] Insectoid\r\n" );
+          write_to_buffer( "[R] Saughin\r\n" );
+         connected = CON_GET_RACE;
          return;
 
+      case CON_GET_RACE:
+          switch ( argument[0] )
+          {
+              case 'a':
+              case 'A':
+                  ch->race = RACE_HUMAN;
+                  break;
+              case 'b':
+              case 'B':
+                  ch->race = RACE_HIGH_ELF;
+                  break;
+              case 'c':
+              case 'C':
+                  ch->race = RACE_DWARF;
+                  break;
+              case 'd':
+              case 'D':
+                  ch->race = RACE_HALFLING;
+                  break;
+              case 'e':
+              case 'E':
+                  ch->race = RACE_PIXIE;
+                  break;
+              case 'f':
+              case 'F':
+                  ch->race = RACE_HALF_OGRE;
+                  break;
+              case 'g':
+              case 'G':
+                  ch->race = RACE_HALF_ORC;
+                  break;
+              case 'h':
+              case 'H':
+                  ch->race = RACE_HALF_TROLL;
+                  break;
+              case 'i':
+              case 'I':
+                  ch->race = RACE_GITH;
+                  break;
+              case 'j':
+              case 'J':
+                  ch->race = RACE_MINOTAUR;
+                  break;
+              case 'k':
+              case 'K':
+                  ch->race = RACE_DUERGAR;
+                  break;
+              case 'l':
+              case 'L':
+                  ch->race = RACE_CENTAUR;
+                  break;
+              case 'm':
+              case 'M':
+                  ch->race = RACE_IGUANADON;
+                  break;
+              case 'n':
+              case 'N':
+                  ch->race = RACE_GNOME;
+                  break;
+              case 'o':
+              case 'O':
+                  ch->race = RACE_DROW;
+                  break;
+              case 'p':
+              case 'P':
+                  ch->race = RACE_WILD_ELF;
+                  break;
+              case 'q':
+              case 'Q':
+                  ch->race = RACE_INSECTOID;
+                  break;
+              case 'r':
+              case 'R':
+                  ch->race = RACE_SAUGHIN;
+                  break;
+              default:
+                  write_to_buffer( "That's not a valid race.\r\nChoose again.\r\n" );
+                  return;
+          }
+          write_to_buffer( "Choose your class: " );
+          write_to_buffer( "[A] Warrior\r\n" );
+          write_to_buffer( "[B] Mage\r\n" );
+          write_to_buffer( "[C] Cleric\r\n" );
+          write_to_buffer( "[D] Druid\r\n" );
+          write_to_buffer( "[E] Bard\r\n" );
+          write_to_buffer( "[F] Monk\r\n" );
+          write_to_buffer( "[G] Necromancer\r\n" );
+          write_to_buffer( "[H] Paladin\r\n" );
+          write_to_buffer( "[I] Ranger\r\n" );
+          write_to_buffer( "[J] Rogue\r\n" );
+          write_to_buffer( "[K] Anti-Paladin\r\n" );
+          connected = CON_GET_CLASS;
+          return;
+          
+      case CON_GET_CLASS:
+          switch ( argument[0] )
+          {
+              case 'a':
+              case 'A':
+                  ch->Class = CLASS_WARRIOR;
+                  break;
+              case 'b':
+              case 'B':
+                  ch->Class = CLASS_MAGE;
+                  break;
+              case 'c':
+              case 'C':
+                  ch->Class = CLASS_CLERIC;
+                  break;
+              case 'd':
+              case 'D':
+                  ch->Class = CLASS_DRUID;
+                  break;
+              case 'e':
+              case 'E':
+                  ch->Class = CLASS_BARD;
+                  break;
+              case 'f':
+              case 'F':
+                  ch->Class = CLASS_MONK;
+                  break;
+              case 'g':
+              case 'G':
+                  ch->Class = CLASS_NECROMANCER;
+                  break;
+              case 'h':
+              case 'H':
+                  ch->Class = CLASS_PALADIN;
+                  break;
+              case 'i':
+              case 'I':
+                  ch->Class = CLASS_RANGER;
+                  break;
+              case 'j':
+              case 'J':
+                  ch->Class = CLASS_ROGUE;
+                  break;
+              case 'k':
+              case 'K':
+                  ch->Class = CLASS_ANTIPALADIN;
+                  break;
+              default:
+                  write_to_buffer( "That's not a valid class.\r\nChoose again. " );
+                  return;
+          }
+          //write_to_buffer( "Press [ENTER] " );
+          //show_title(  );
+          ch->level = 0;
+          ch->set_pcflag( PCFLAG_ANSI );
+          reset_colors( ch );  /* Added for new configurable color code - Samson 3-27-98 */
+          ch->set_pcflag( PCFLAG_BLANK );
+          ch->set_pcflag( PCFLAG_AUTOMAP );
+          if( ch->desc->msp_detected )
+              ch->set_pcflag( PCFLAG_MSP );
+          ch->position = POS_STANDING;
+          
+          connected = CON_PRESS_ENTER;
+          write_to_buffer( "\n\n PRESS ENTER \n\n");
+          return;
+                
       case CON_PRESS_ENTER:
          ch->set_pager_color( AT_PLAIN ); /* Set default color so they don't see blank space */
 

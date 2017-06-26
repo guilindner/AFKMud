@@ -3904,8 +3904,8 @@ void setup_newbie( char_data * ch, bool NEWLOGIN )
 
    int iLang;
 
-   ch->Class = CLASS_WARRIOR; /* Default for new PC - Samson 8-4-98 */
-   ch->race = RACE_HUMAN;  /* Default for new PC - Samson 8-4-98 */
+   //ch->Class = CLASS_WARRIOR; /* Default for new PC - Samson 8-4-98 */
+   //ch->race = RACE_HUMAN;  /* Default for new PC - Samson 8-4-98 */
    ch->pcdata->clan = nullptr;
 
    race = race_table[ch->race];
