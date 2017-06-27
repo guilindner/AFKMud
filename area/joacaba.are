@@ -32,7 +32,7 @@ Stats1    -700 -1 0 0 150 100
 Stats2    5 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
-Actflags  npc nowander stayarea~
+Actflags  npc nowander sentinel stayarea~
 #ENDMOBILE
 
 #MOBILE
@@ -53,7 +53,7 @@ Stats1    -700 -1 0 0 150 100
 Stats2    5 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
-Actflags  npc nowander stayarea~
+Actflags  npc nowander sentinel stayarea~
 #ENDMOBILE
 
 #MOBILE
@@ -74,7 +74,7 @@ Stats1    -700 -1 0 0 150 100
 Stats2    5 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
-Actflags  npc nowander stayarea~
+Actflags  npc nowander sentinel stayarea~
 #ENDMOBILE
 
 #ROOM
@@ -118,13 +118,6 @@ Desc      Taberna do Barbeiro.
 ~
 #ENDEXIT
 
-#EXIT
-Direction east~
-ToRoom    50000
-ToCoords  918 935
-Flags     overland nomob~
-#ENDEXIT
-
 #ENDROOM
 
 #ROOM
@@ -143,12 +136,6 @@ Desc      Taberna do Barbeiro.
 ~
 #ENDEXIT
 
-#EXIT
-Direction east~
-ToRoom    50000
-ToCoords  918 935
-Flags     overland nomob~
-#ENDEXIT
 Reset M 30001 1 30002 -1 -1 -1 100
 Reset M 30002 1 30002 -1 -1 -1 100
 #ENDROOM

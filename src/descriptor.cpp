@@ -2644,7 +2644,7 @@ void display_motd( char_data * ch )
       else
          ch->pager( "\014" );
 
-      do_help( ch, "nmotd" );
+      //do_help( ch, "nmotd" );
       ch->pager( "\r\nPress [ENTER] " );
       ch->desc->connected = CON_READ_MOTD;
       return;
@@ -3093,7 +3093,7 @@ void descriptor_data::nanny( string & argument )
                write_to_buffer( "That's not a gender.\r\nWhat IS your gender? " );
                return;
          }
-         write_to_buffer( "Choose your race: \r\n" );
+         write_to_buffer( "\nChoose your race: \r\n" );
           write_to_buffer( "[A] Human\r\n" );
           write_to_buffer( "[B] High-Elf\r\n" );
           write_to_buffer( "[C] Dwarf\r\n" );
@@ -3194,20 +3194,41 @@ void descriptor_data::nanny( string & argument )
                   write_to_buffer( "That's not a valid race.\r\nChoose again.\r\n" );
                   return;
           }
-          write_to_buffer( "Choose your class: " );
-          write_to_buffer( "[A] Warrior\r\n" );
-          write_to_buffer( "[B] Mage\r\n" );
-          write_to_buffer( "[C] Cleric\r\n" );
-          write_to_buffer( "[D] Druid\r\n" );
-          write_to_buffer( "[E] Bard\r\n" );
-          write_to_buffer( "[F] Monk\r\n" );
-          write_to_buffer( "[G] Necromancer\r\n" );
-          write_to_buffer( "[H] Paladin\r\n" );
-          write_to_buffer( "[I] Ranger\r\n" );
-          write_to_buffer( "[J] Rogue\r\n" );
-          write_to_buffer( "[K] Anti-Paladin\r\n" );
-          connected = CON_GET_CLASS;
+          buffer_printf( "Did I get that right, %s (Y/N)?\r\n", npc_race[ch->race]);
+          connected = CON_CONFIRM_RACE;
           return;
+          
+      case CON_CONFIRM_RACE:
+         switch ( argument[0] )
+         {
+            case 'y':
+            case 'Y':
+              write_to_buffer( "\nChoose your class:\r\n" );
+              write_to_buffer( "[A] Warrior\r\n" );
+              write_to_buffer( "[B] Mage\r\n" );
+              write_to_buffer( "[C] Cleric\r\n" );
+              write_to_buffer( "[D] Druid\r\n" );
+              write_to_buffer( "[E] Bard\r\n" );
+              write_to_buffer( "[F] Monk\r\n" );
+              write_to_buffer( "[G] Necromancer\r\n" );
+              write_to_buffer( "[H] Paladin\r\n" );
+              write_to_buffer( "[I] Ranger\r\n" );
+              write_to_buffer( "[J] Rogue\r\n" );
+              write_to_buffer( "[K] Anti-Paladin\r\n" );
+              connected = CON_GET_CLASS;
+              break;
+
+            case 'n':
+            case 'N':
+               write_to_buffer( "Ok, what IS it, then? " );
+               connected = CON_GET_RACE;
+               break;
+
+            default:
+               write_to_buffer( "Please type Yes or No. " );
+               break;
+         }
+         break;
           
       case CON_GET_CLASS:
           switch ( argument[0] )
@@ -3260,20 +3281,40 @@ void descriptor_data::nanny( string & argument )
                   write_to_buffer( "That's not a valid class.\r\nChoose again. " );
                   return;
           }
-          //write_to_buffer( "Press [ENTER] " );
-          //show_title(  );
-          ch->level = 0;
-          ch->set_pcflag( PCFLAG_ANSI );
-          reset_colors( ch );  /* Added for new configurable color code - Samson 3-27-98 */
-          ch->set_pcflag( PCFLAG_BLANK );
-          ch->set_pcflag( PCFLAG_AUTOMAP );
-          if( ch->desc->msp_detected )
-              ch->set_pcflag( PCFLAG_MSP );
-          ch->position = POS_STANDING;
-          
-          connected = CON_PRESS_ENTER;
-          write_to_buffer( "\n\n PRESS ENTER \n\n");
+
+          buffer_printf( "Did I get that right, %s (Y/N)?\r\n", npc_class[ch->Class]);
+          connected = CON_CONFIRM_CLASS;
           return;
+          
+      case CON_CONFIRM_CLASS:
+          switch ( argument[0] )
+         {
+            case 'y':
+            case 'Y':
+               ch->level = 0;
+               ch->set_pcflag( PCFLAG_ANSI );
+               reset_colors( ch );
+               ch->set_pcflag( PCFLAG_BLANK );
+               ch->set_pcflag( PCFLAG_AUTOMAP );
+               if( ch->desc->msp_detected )
+                  ch->set_pcflag( PCFLAG_MSP );
+               ch->position = POS_STANDING;
+               write_to_buffer( "\n\n PRESS ENTER \n\n");
+               connected = CON_PRESS_ENTER;
+               break;
+
+            case 'n':
+            case 'N':
+               write_to_buffer( "Ok, what IS it, then? " );
+               connected = CON_GET_CLASS;
+               return;
+
+            default:
+               write_to_buffer( "Please type Yes or No. " );
+               return;
+          
+          break;
+         }        
                 
       case CON_PRESS_ENTER:
          ch->set_pager_color( AT_PLAIN ); /* Set default color so they don't see blank space */

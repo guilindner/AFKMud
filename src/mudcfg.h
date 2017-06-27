@@ -266,8 +266,8 @@ const int OBJ_VNUM_NEWBIE_GUIDE = 11479;
  * Well known room virtual numbers.
  * Defined in #ROOMS.
  */
-const int ROOM_AUTH_START = 100;       /* Pregame Entry, auth system on */
-const int ROOM_NOAUTH_START = 102;     /* Pregame Entry, auth system off */
+const int ROOM_AUTH_START = 30000;       /* era 100 Pregame Entry, auth system on */
+const int ROOM_NOAUTH_START = 30000;     /* era 102 Pregame Entry, auth system off */
 const int ROOM_VNUM_LIMBO = 11401;
 const int ROOM_VNUM_POLY = 11402;
 const int ROOM_VNUM_RAREUPDATE = 11402;   /* Room where players get scanned for rare items - Samson 1-24-00 */

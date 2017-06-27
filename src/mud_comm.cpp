@@ -3902,10 +3902,8 @@ void setup_newbie( char_data * ch, bool NEWLOGIN )
    obj_index *objcheck;
    race_type *race;
 
-   int iLang;
+   //int iLang;
 
-   //ch->Class = CLASS_WARRIOR; /* Default for new PC - Samson 8-4-98 */
-   //ch->race = RACE_HUMAN;  /* Default for new PC - Samson 8-4-98 */
    ch->pcdata->clan = nullptr;
 
    race = race_table[ch->race];
@@ -3926,12 +3924,12 @@ void setup_newbie( char_data * ch, bool NEWLOGIN )
 
    ch->height = ch->calculate_race_height(  );
    ch->weight = ch->calculate_race_weight(  );
-
+   /*
    if( ( iLang = skill_lookup( "common" ) ) < 0 )
       bug( "%s: cannot find common language.", __func__ );
    else
       ch->pcdata->learned[iLang] = 100;
-
+   */
    name_stamp_stats( ch ); /* Initialize first stat roll for new PC - Samson */
 
    ch->level = 1;
