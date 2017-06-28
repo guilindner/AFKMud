@@ -3121,74 +3121,164 @@ void descriptor_data::nanny( string & argument )
               case 'a':
               case 'A':
                   ch->race = RACE_HUMAN;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'b':
               case 'B':
                   ch->race = RACE_HIGH_ELF;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'c':
               case 'C':
                   ch->race = RACE_DWARF;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'd':
               case 'D':
                   ch->race = RACE_HALFLING;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'e':
               case 'E':
                   ch->race = RACE_PIXIE;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'f':
               case 'F':
                   ch->race = RACE_HALF_OGRE;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'g':
               case 'G':
                   ch->race = RACE_HALF_ORC;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'h':
               case 'H':
                   ch->race = RACE_HALF_TROLL;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'i':
               case 'I':
                   ch->race = RACE_GITH;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'j':
               case 'J':
                   ch->race = RACE_MINOTAUR;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'k':
               case 'K':
                   ch->race = RACE_DUERGAR;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'l':
               case 'L':
                   ch->race = RACE_CENTAUR;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'm':
               case 'M':
                   ch->race = RACE_IGUANADON;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'n':
               case 'N':
                   ch->race = RACE_GNOME;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'o':
               case 'O':
                   ch->race = RACE_DROW;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'p':
               case 'P':
                   ch->race = RACE_WILD_ELF;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'q':
               case 'Q':
                   ch->race = RACE_INSECTOID;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               case 'r':
               case 'R':
                   ch->race = RACE_SAUGHIN;
+                  write_to_buffer("You will get the following:\n");
+                  buffer_printf("Str: %d Dex: %d Con: %d Int: %d Wis: %d Cha: %d\n",
+                  race_table[ch->race]->str_plus,race_table[ch->race]->dex_plus,
+                  race_table[ch->race]->con_plus,race_table[ch->race]->int_plus,
+                  race_table[ch->race]->wis_plus,race_table[ch->race]->cha_plus);
                   break;
               default:
                   write_to_buffer( "That's not a valid race.\r\nChoose again.\r\n" );

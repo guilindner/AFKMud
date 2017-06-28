@@ -3878,13 +3878,13 @@ CMDF( do_mpdoppleganger )
 /* Changed to use internal random number generator instead of OS dependant random() function - Samson 9-5-98 */
 void name_stamp_stats( char_data * ch )
 {
-   ch->perm_str = 6 + dice( 2, 6 );
-   ch->perm_dex = 6 + dice( 2, 6 );
-   ch->perm_wis = 6 + dice( 2, 6 );
-   ch->perm_int = 6 + dice( 2, 6 );
-   ch->perm_con = 6 + dice( 2, 6 );
-   ch->perm_cha = 6 + dice( 2, 6 );
-   ch->perm_lck = 6 + dice( 2, 6 );
+   ch->perm_str = 10 ;
+   ch->perm_dex = 10 ;
+   ch->perm_wis = 10 ;
+   ch->perm_int = 10 ;
+   ch->perm_con = 10 ;
+   ch->perm_cha = 10 ;
+   ch->perm_lck = 10 ;
 
    ch->perm_str += race_table[ch->race]->str_plus;
    ch->perm_int += race_table[ch->race]->int_plus;
