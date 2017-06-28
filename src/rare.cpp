@@ -48,7 +48,6 @@ auth_data *get_auth_name( const string & );
 void check_pfiles( time_t );
 void update_connhistory( descriptor_data *, int );
 void show_stateflags( char_data * );
-void quotes( char_data * );
 
 /* Removes rare items the player cannot maintain. */
 void rare_purge( char_data * ch, obj_data * obj )
@@ -166,7 +165,6 @@ void char_leaving( char_data * ch, int howleft )
 
         inventory_scan( ch, obj );
     }
-    quotes( ch );
     quitting_char = ch;
     ch->save(  );
 
