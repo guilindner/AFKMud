@@ -40,7 +40,7 @@
    who use this code. What are you using it for, what have you done
    to it, ideas, comments, etc. So while it's not necessary, I'd love
    to get a note from you at scion@divineright.org. Thanks! -- Scion
-*/
+ */
 
 const int MAX_xBITS = 32000;
 

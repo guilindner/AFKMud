@@ -54,7 +54,7 @@ const int MAX_BITS = XBI * INTBITS;
  */
 struct extended_bitvector
 {
-   unsigned int bits[XBI]; /* Needs to be unsigned to compile in Redhat 6 - Samson */
+    unsigned int bits[XBI]; /* Needs to be unsigned to compile in Redhat 6 - Samson */
 };
 
 EXT_BV fread_bitvector( FILE * );

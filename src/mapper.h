@@ -38,10 +38,10 @@
 /* Structure for the map itself */
 struct map_type
 {
-//   EXT_BV info;
-   char tegn;  // Character to print at this map coord
-   int vnum;   // Room this coord represents
-   int depth;  // Recursive depth this coord was found at
-   int sector; // Sector type of the map space
-   bool can_see;
+    //   EXT_BV info;
+    char tegn;  // Character to print at this map coord
+    int vnum;   // Room this coord represents
+    int depth;  // Recursive depth this coord was found at
+    int sector; // Sector type of the map space
+    bool can_see;
 };

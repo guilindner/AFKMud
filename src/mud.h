@@ -144,7 +144,7 @@ const int MIL = 2048;   /* MAX_INPUT_LENGTH */
 // DON'T FORGET TO ADD THESE TO BUILD.C !!!
 enum log_types
 {
-   LOG_NORMAL, LOG_ALWAYS, LOG_NEVER, LOG_BUILD, LOG_HIGH, LOG_COMM, LOG_WARN, LOG_INFO, LOG_AUTH, LOG_DEBUG, LOG_ALL
+    LOG_NORMAL, LOG_ALWAYS, LOG_NEVER, LOG_BUILD, LOG_HIGH, LOG_COMM, LOG_WARN, LOG_INFO, LOG_AUTH, LOG_DEBUG, LOG_ALL
 };
 
 /*
@@ -153,21 +153,21 @@ enum log_types
  */
 enum ret_types
 {
-   rNONE, rCHAR_DIED, rVICT_DIED, rSPELL_FAILED, rVICT_IMMUNE, rSTOP, rERROR = 255
+    rNONE, rCHAR_DIED, rVICT_DIED, rSPELL_FAILED, rVICT_IMMUNE, rSTOP, rERROR = 255
 };
 
 /* Echo types for echo_to_all */
 enum echo_types
 {
-   ECHOTAR_ALL, ECHOTAR_PC, ECHOTAR_PK, ECHOTAR_IMM
+    ECHOTAR_ALL, ECHOTAR_PC, ECHOTAR_PK, ECHOTAR_IMM
 };
 
 /* Global Skill Numbers */
 #define ASSIGN_GSN(gsn, skill) \
-do                             \
+    do                             \
 {                              \
-   if( ( (gsn) = skill_lookup( (skill) ) ) == -1 ) \
-      log_printf( "ASSIGN_GSN: Skill %s not found.\n", (skill) ); \
+    if( ( (gsn) = skill_lookup( (skill) ) ) == -1 ) \
+    log_printf( "ASSIGN_GSN: Skill %s not found.\n", (skill) ); \
 } while(0)
 
 /*
@@ -300,8 +300,8 @@ extern short gsn_dragon_ride;
  */
 struct extra_descr_data
 {
-   string keyword;   /* Keyword in look/examine */
-   string desc;   /* What to see */
+    string keyword;   /* Keyword in look/examine */
+    string desc;   /* What to see */
 };
 
 #include "mudcfg.h"  /* Contains definitions specific to your mud - will not be covered by patches. Samson 3-14-04 */
@@ -313,27 +313,27 @@ struct extra_descr_data
  */
 enum sun_positions
 {
-   SUN_DARK, SUN_RISE, SUN_LIGHT, SUN_SET
+    SUN_DARK, SUN_RISE, SUN_LIGHT, SUN_SET
 };
 
 enum sky_conditions
 {
-   SKY_CLOUDLESS, SKY_CLOUDY, SKY_RAINING, SKY_LIGHTNING
+    SKY_CLOUDLESS, SKY_CLOUDY, SKY_RAINING, SKY_LIGHTNING
 };
 
 enum temp_conditions
 {
-   TEMP_COLD, TEMP_COOL, TEMP_NORMAL, TEMP_WARM, TEMP_HOT
+    TEMP_COLD, TEMP_COOL, TEMP_NORMAL, TEMP_WARM, TEMP_HOT
 };
 
 enum precip_conditions
 {
-   PRECIP_ARID, PRECIP_DRY, PRECIP_NORMAL, PRECIP_DAMP, PRECIP_WET
+    PRECIP_ARID, PRECIP_DRY, PRECIP_NORMAL, PRECIP_DAMP, PRECIP_WET
 };
 
 enum wind_conditions
 {
-   WIND_STILL, WIND_CALM, WIND_NORMAL, WIND_BREEZY, WIND_WINDY
+    WIND_STILL, WIND_CALM, WIND_NORMAL, WIND_BREEZY, WIND_WINDY
 };
 
 #define GET_TEMP_UNIT(weather)   ((weather->temp + 3*weath_unit - 1)/weath_unit)
@@ -351,25 +351,25 @@ enum wind_conditions
 
 struct time_info_data
 {
-   int hour;
-   int day;
-   int month;
-   int year;
-   int sunlight;
-   int season; /* Samson 5-6-99 */
+    int hour;
+    int day;
+    int month;
+    int year;
+    int sunlight;
+    int season; /* Samson 5-6-99 */
 };
 
 /* short cut crash bug fix provided by gfinello@mail.karmanet.it*/
 enum relation_type
 {
-   relMSET_ON, relOSET_ON
+    relMSET_ON, relOSET_ON
 };
 
 struct rel_data
 {
-   void *Actor;
-   void *Subject;
-   relation_type Type;
+    void *Actor;
+    void *Subject;
+    relation_type Type;
 };
 
 /*
@@ -377,16 +377,16 @@ struct rel_data
  */
 enum connection_types
 {
-   CON_GET_NAME = -99, CON_GET_OLD_PASSWORD,
-   CON_CONFIRM_NEW_NAME, CON_GET_NEW_PASSWORD, CON_CONFIRM_NEW_PASSWORD,
-   CON_GET_PORT_PASSWORD, CON_GET_NEW_SEX, CON_PRESS_ENTER,
-   CON_READ_MOTD, CON_COPYOVER_RECOVER, CON_PLOADED,
-   CON_PLAYING = 0, CON_EDITING, CON_ROLL_STATS,
-   CON_OEDIT, CON_MEDIT, CON_REDIT, /* Oasis OLC */
-   CON_PRIZENAME, CON_CONFIRMPRIZENAME, CON_PRIZEKEY,
-   CON_CONFIRMPRIZEKEY, CON_DELETE, CON_RAISE_STAT,
-   CON_BOARD, CON_FORKED, CON_GET_RACE, CON_GET_CLASS,
-   CON_CONFIRM_RACE, CON_CONFIRM_CLASS
+    CON_GET_NAME = -99, CON_GET_OLD_PASSWORD,
+    CON_CONFIRM_NEW_NAME, CON_GET_NEW_PASSWORD, CON_CONFIRM_NEW_PASSWORD,
+    CON_GET_PORT_PASSWORD, CON_GET_NEW_SEX, CON_PRESS_ENTER,
+    CON_READ_MOTD, CON_COPYOVER_RECOVER, CON_PLOADED,
+    CON_PLAYING = 0, CON_EDITING, CON_ROLL_STATS,
+    CON_OEDIT, CON_MEDIT, CON_REDIT, /* Oasis OLC */
+    CON_PRIZENAME, CON_CONFIRMPRIZENAME, CON_PRIZEKEY,
+    CON_CONFIRMPRIZEKEY, CON_DELETE, CON_RAISE_STAT,
+    CON_BOARD, CON_FORKED, CON_GET_RACE, CON_GET_CLASS,
+    CON_CONFIRM_RACE, CON_CONFIRM_CLASS
 };
 
 /*
@@ -394,19 +394,19 @@ enum connection_types
  */
 enum char_substates
 {
-   SUB_NONE, SUB_PAUSE, SUB_PERSONAL_DESC, SUB_BAN_DESC, SUB_OBJ_LONG,
-   SUB_OBJ_EXTRA, SUB_MOB_DESC, SUB_ROOM_DESC,
-   SUB_ROOM_EXTRA, SUB_WRITING_NOTE, SUB_MPROG_EDIT,
-   SUB_HELP_EDIT, SUB_SKILL_HELP_EDIT, SUB_PERSONAL_BIO, SUB_REPEATCMD,
-   SUB_RESTRICTED, SUB_DEITYDESC, SUB_MORPH_DESC, SUB_MORPH_HELP,
-   SUB_PROJ_DESC, SUB_SLAYCMSG, SUB_SLAYVMSG, SUB_SLAYRMSG, SUB_EDMOTD,
-   SUB_ROOM_DESC_NITE, SUB_OVERLAND_DESC, SUB_BOARD_TO, SUB_BOARD_SUBJECT,
-   SUB_BOARD_STICKY, SUB_BOARD_TEXT, SUB_BOARD_CONFIRM, SUB_BOARD_REDO_MENU,
-   SUB_JOURNAL_WRITE, SUB_EDIT_ABORT,
-   /*
-    * timer types ONLY below this point 
-    */
-   SUB_TIMER_DO_ABORT = 128, SUB_TIMER_CANT_ABORT
+    SUB_NONE, SUB_PAUSE, SUB_PERSONAL_DESC, SUB_BAN_DESC, SUB_OBJ_LONG,
+    SUB_OBJ_EXTRA, SUB_MOB_DESC, SUB_ROOM_DESC,
+    SUB_ROOM_EXTRA, SUB_WRITING_NOTE, SUB_MPROG_EDIT,
+    SUB_HELP_EDIT, SUB_SKILL_HELP_EDIT, SUB_PERSONAL_BIO, SUB_REPEATCMD,
+    SUB_RESTRICTED, SUB_DEITYDESC, SUB_MORPH_DESC, SUB_MORPH_HELP,
+    SUB_PROJ_DESC, SUB_SLAYCMSG, SUB_SLAYVMSG, SUB_SLAYRMSG, SUB_EDMOTD,
+    SUB_ROOM_DESC_NITE, SUB_OVERLAND_DESC, SUB_BOARD_TO, SUB_BOARD_SUBJECT,
+    SUB_BOARD_STICKY, SUB_BOARD_TEXT, SUB_BOARD_CONFIRM, SUB_BOARD_REDO_MENU,
+    SUB_JOURNAL_WRITE, SUB_EDIT_ABORT,
+    /*
+     * timer types ONLY below this point 
+     */
+    SUB_TIMER_DO_ABORT = 128, SUB_TIMER_CANT_ABORT
 };
 
 /*
@@ -414,41 +414,41 @@ enum char_substates
  */
 struct str_app_type
 {
-   short tohit;
-   short todam;
-   short carry;
-   short wield;
+    short tohit;
+    short todam;
+    short carry;
+    short wield;
 };
 
 struct int_app_type
 {
-   short learn;
+    short learn;
 };
 
 struct wis_app_type
 {
-   short practice;
+    short practice;
 };
 
 struct dex_app_type
 {
-   short defensive;
+    short defensive;
 };
 
 struct con_app_type
 {
-   short hitp;
-   short shock;
+    short hitp;
+    short shock;
 };
 
 struct cha_app_type
 {
-   short charm;
+    short charm;
 };
 
 struct lck_app_type
 {
-   short luck;
+    short luck;
 };
 
 /*
@@ -456,7 +456,7 @@ struct lck_app_type
  */
 enum to_types
 {
-   TO_ROOM, TO_NOTVICT, TO_VICT, TO_CHAR, TO_CANSEE, TO_THIRD
+    TO_ROOM, TO_NOTVICT, TO_VICT, TO_CHAR, TO_CANSEE, TO_THIRD
 };
 
 /*
@@ -470,19 +470,19 @@ enum to_types
  */
 class affect_data
 {
- private:
-   affect_data( const affect_data & a );
-     affect_data & operator=( const affect_data & );
+    private:
+        affect_data( const affect_data & a );
+        affect_data & operator=( const affect_data & );
 
- public:
-     affect_data(  );
+    public:
+        affect_data(  );
 
-     bitset < MAX_RIS_FLAG > rismod;
-   int bit;
-   int duration;
-   int modifier;
-   short location;
-   short type;
+        bitset < MAX_RIS_FLAG > rismod;
+        int bit;
+        int duration;
+        int modifier;
+        short location;
+        short type;
 };
 
 /*
@@ -490,8 +490,8 @@ class affect_data
  */
 enum autosave_flags
 {
-   SV_DEATH, SV_KILL, SV_PASSCHG, SV_DROP, SV_PUT, SV_GIVE, SV_AUTO,
-   SV_ZAPDROP, SV_AUCTION, SV_GET, SV_RECEIVE, SV_IDLE, SV_FILL, SV_EMPTY, SV_MAX
+    SV_DEATH, SV_KILL, SV_PASSCHG, SV_DROP, SV_PUT, SV_GIVE, SV_AUTO,
+    SV_ZAPDROP, SV_AUCTION, SV_GET, SV_RECEIVE, SV_IDLE, SV_FILL, SV_EMPTY, SV_MAX
 };
 
 /*
@@ -500,7 +500,7 @@ enum autosave_flags
 /* There was really no justifiable reason to make this a BV guys. What the hell? */
 enum act_strings
 {
-   STRING_NONE, STRING_IMM
+    STRING_NONE, STRING_IMM
 };
 
 const int PT_WATER = 100;
@@ -514,11 +514,11 @@ const int PT_FIRE = 400;
  */
 enum dir_pulltypes
 {
-   PULL_UNDEFINED, PULL_VORTEX, PULL_VACUUM, PULL_SLIP, PULL_ICE, PULL_MYSTERIOUS,
-   PULL_CURRENT = PT_WATER, PULL_WAVE, PULL_WHIRLPOOL, PULL_GEYSER,
-   PULL_WIND = PT_AIR, PULL_STORM, PULL_COLDWIND, PULL_BREEZE,
-   PULL_LANDSLIDE = PT_EARTH, PULL_SINKHOLE, PULL_QUICKSAND, PULL_EARTHQUAKE,
-   PULL_LAVA = PT_FIRE, PULL_HOTAIR
+    PULL_UNDEFINED, PULL_VORTEX, PULL_VACUUM, PULL_SLIP, PULL_ICE, PULL_MYSTERIOUS,
+    PULL_CURRENT = PT_WATER, PULL_WAVE, PULL_WHIRLPOOL, PULL_GEYSER,
+    PULL_WIND = PT_AIR, PULL_STORM, PULL_COLDWIND, PULL_BREEZE,
+    PULL_LANDSLIDE = PT_EARTH, PULL_SINKHOLE, PULL_QUICKSAND, PULL_EARTHQUAKE,
+    PULL_LAVA = PT_FIRE, PULL_HOTAIR
 };
 
 /*
@@ -526,7 +526,7 @@ enum dir_pulltypes
  */
 enum pc_conditions
 {
-   COND_DRUNK, COND_FULL, COND_THIRST, MAX_CONDS
+    COND_DRUNK, COND_FULL, COND_THIRST, MAX_CONDS
 };
 
 /*
@@ -534,26 +534,26 @@ enum pc_conditions
  */
 enum combat_styles
 {
-   STYLE_BERSERK, STYLE_AGGRESSIVE, STYLE_FIGHTING, STYLE_DEFENSIVE, STYLE_EVASIVE
+    STYLE_BERSERK, STYLE_AGGRESSIVE, STYLE_FIGHTING, STYLE_DEFENSIVE, STYLE_EVASIVE
 };
 
 /* Bits for pc_data->flags */
 /* DAMMIT! Don't forget to add these things to build.cpp!! */
 enum pc_flags
 {
-   PCFLAG_NONE, PCFLAG_DEADLY, PCFLAG_UNAUTHED, PCFLAG_NORECALL, PCFLAG_NOINTRO, PCFLAG_GAG,
-   PCFLAG_NOBIO, PCFLAG_NODESC, PCFLAG_NOSUMMON, PCFLAG_PAGERON, PCFLAG_NOTITLE,
-   PCFLAG_GROUPWHO, PCFLAG_GROUPSPLIT, PCFLAG_HELPSTART,
-   PCFLAG_AUTOFLAGS, PCFLAG_SECTORD, PCFLAG_ANAME, PCFLAG_NOBEEP, PCFLAG_PASSDOOR,
-   PCFLAG_PRIVACY, PCFLAG_NOTELL, PCFLAG_CHECKBOARD, PCFLAG_NOQUOTE,
-   PCFLAG_AUTOASSIST, PCFLAG_SHOVEDRAG, PCFLAG_AUTOEXIT, PCFLAG_AUTOLOOT,
-   PCFLAG_AUTOSAC, PCFLAG_BLANK, PCFLAG_BRIEF, PCFLAG_AUTOMAP,
-   PCFLAG_TELNET_GA, PCFLAG_HOLYLIGHT, PCFLAG_WIZINVIS, PCFLAG_ROOMVNUM, PCFLAG_SILENCE,
-   PCFLAG_NO_EMOTE, PCFLAG_BOARDED, PCFLAG_NO_TELL, PCFLAG_LOG, PCFLAG_DENY, PCFLAG_FREEZE,
-   PCFLAG_EXEMPT, PCFLAG_ONSHIP, PCFLAG_LITTERBUG, PCFLAG_ANSI, PCFLAG_MSP, PCFLAG_AUTOGOLD,
-   PCFLAG_GHOST, PCFLAG_AFK, PCFLAG_NO_URL, PCFLAG_NO_EMAIL, PCFLAG_SMARTSAC,
-   PCFLAG_IDLING, PCFLAG_ONMAP, PCFLAG_MAPEDIT, PCFLAG_GUILDSPLIT, PCFLAG_COMPASS,
-   PCFLAG_RETIRED, PCFLAG_NO_BEEP, MAX_PCFLAG
+    PCFLAG_NONE, PCFLAG_DEADLY, PCFLAG_UNAUTHED, PCFLAG_NORECALL, PCFLAG_NOINTRO, PCFLAG_GAG,
+    PCFLAG_NOBIO, PCFLAG_NODESC, PCFLAG_NOSUMMON, PCFLAG_PAGERON, PCFLAG_NOTITLE,
+    PCFLAG_GROUPWHO, PCFLAG_GROUPSPLIT, PCFLAG_HELPSTART,
+    PCFLAG_AUTOFLAGS, PCFLAG_SECTORD, PCFLAG_ANAME, PCFLAG_NOBEEP, PCFLAG_PASSDOOR,
+    PCFLAG_PRIVACY, PCFLAG_NOTELL, PCFLAG_CHECKBOARD, PCFLAG_NOQUOTE,
+    PCFLAG_AUTOASSIST, PCFLAG_SHOVEDRAG, PCFLAG_AUTOEXIT, PCFLAG_AUTOLOOT,
+    PCFLAG_AUTOSAC, PCFLAG_BLANK, PCFLAG_BRIEF, PCFLAG_AUTOMAP,
+    PCFLAG_TELNET_GA, PCFLAG_HOLYLIGHT, PCFLAG_WIZINVIS, PCFLAG_ROOMVNUM, PCFLAG_SILENCE,
+    PCFLAG_NO_EMOTE, PCFLAG_BOARDED, PCFLAG_NO_TELL, PCFLAG_LOG, PCFLAG_DENY, PCFLAG_FREEZE,
+    PCFLAG_EXEMPT, PCFLAG_ONSHIP, PCFLAG_LITTERBUG, PCFLAG_ANSI, PCFLAG_MSP, PCFLAG_AUTOGOLD,
+    PCFLAG_GHOST, PCFLAG_AFK, PCFLAG_NO_URL, PCFLAG_NO_EMAIL, PCFLAG_SMARTSAC,
+    PCFLAG_IDLING, PCFLAG_ONMAP, PCFLAG_MAPEDIT, PCFLAG_GUILDSPLIT, PCFLAG_COMPASS,
+    PCFLAG_RETIRED, PCFLAG_NO_BEEP, MAX_PCFLAG
 };
 
 /*
@@ -614,36 +614,36 @@ enum pc_flags
 
 // This damn thing is used in so many places it was about time to just move it here - Samson 10-4-03
 #define KEY( literal, field, value ) \
-if( !str_cmp( word, (literal) ) )    \
+    if( !str_cmp( word, (literal) ) )    \
 {                                    \
-   (field) = (value);                \
-   break;                            \
+    (field) = (value);                \
+    break;                            \
 }
 
 // This reads in a value and uses the class function to assign the value to the field - Samson 3-1-05
 #define CLKEY( literal, value )   \
-if( !str_cmp( word, (literal) ) ) \
+    if( !str_cmp( word, (literal) ) ) \
 {                                 \
-   (value);                       \
-   break;                         \
+    (value);                       \
+    break;                         \
 }
 
 // This reads a string value into a C++ string variable using the tilde as a delimeter - Samson 10-3-04
 #define STDSKEY( literal, field )      \
-if( !strcasecmp( word, (literal) ) )   \
+    if( !strcasecmp( word, (literal) ) )   \
 {                                      \
-   (field).clear();                    \
-   fread_string( (field), fp );        \
-   break;                              \
+    (field).clear();                    \
+    fread_string( (field), fp );        \
+    break;                              \
 }
 
 // This reads a string value into a C++ string variable using line-feed as a delimeter - Samson 10-3-04
 #define STDSLINE( literal, field )     \
-if( !strcasecmp( word, (literal) ) )   \
+    if( !strcasecmp( word, (literal) ) )   \
 {                                      \
-   (field).clear();                    \
-   fread_line( (field), fp );          \
-   break;                              \
+    (field).clear();                    \
+    fread_line( (field), fp );          \
+    break;                              \
 }
 
 /*
@@ -668,71 +668,71 @@ if( !strcasecmp( word, (literal) ) )   \
  * Memory allocation macros.
  */
 #define CREATE(result, type, number)                                    \
-do                                                                      \
+    do                                                                      \
 {                                                                       \
-   if (!((result) = (type *) calloc ((number), sizeof(type))))          \
-   {                                                                    \
-      perror("malloc failure");                                         \
-      fprintf(stderr, "Malloc failure @ %s:%d\n", __FILE__, __LINE__ ); \
-      abort();                                                          \
-   }                                                                    \
+    if (!((result) = (type *) calloc ((number), sizeof(type))))          \
+    {                                                                    \
+        perror("malloc failure");                                         \
+        fprintf(stderr, "Malloc failure @ %s:%d\n", __FILE__, __LINE__ ); \
+        abort();                                                          \
+    }                                                                    \
 } while(0)
 
 #define RECREATE(result,type,number)                                    \
-do                                                                      \
+    do                                                                      \
 {                                                                       \
-   if(!((result) = (type *)realloc((result), sizeof(type) * (number)))) \
-   {                                                                    \
-      log_printf( "Realloc failure @ %s:%d\n", __FILE__, __LINE__ );    \
-      abort();                                                          \
-   }                                                                    \
+    if(!((result) = (type *)realloc((result), sizeof(type) * (number)))) \
+    {                                                                    \
+        log_printf( "Realloc failure @ %s:%d\n", __FILE__, __LINE__ );    \
+        abort();                                                          \
+    }                                                                    \
 } while(0)
 
 // WARNING! This macro should only be used on things explicitly handled by CREATE or RECREATE!
 #define OLD_DISPOSE(point)                  \
-do                                          \
+    do                                          \
 {                                           \
-   if( (point) )                            \
-   {                                        \
-      free( (point) );                      \
-      (point) = nullptr;                    \
-   }                                        \
+    if( (point) )                            \
+    {                                        \
+        free( (point) );                      \
+        (point) = nullptr;                    \
+    }                                        \
 } while(0)
 
 #if defined(__FreeBSD__)
 #define DISPOSE(point)                      \
-do                                          \
+    do                                          \
 {                                           \
-   if( (point) )                            \
-   {                                        \
-      free( (point) );                      \
-      (point) = nullptr;                    \
-   }                                        \
+    if( (point) )                            \
+    {                                        \
+        free( (point) );                      \
+        (point) = nullptr;                    \
+    }                                        \
 } while(0)
 #else
 #define DISPOSE(point)                         \
-do                                             \
+    do                                             \
 {                                              \
-   if( (point) )                               \
-   {                                           \
-      if( typeid((point)) == typeid(char*) || typeid((point)) == typeid(const char*) ) \
-      {                                        \
-         if( in_hash_table( (point) ) )        \
-         {                                     \
-            log_printf( "&RDISPOSE called on STRALLOC pointer: %s, line %d\n", __FILE__, __LINE__ ); \
-            log_string( "Attempting to correct." ); \
-            if( str_free( (point) ) == -1 )    \
-               log_printf( "&RSTRFREEing bad pointer: %s, line %d\n", __FILE__, __LINE__ ); \
-         }                                     \
-         else                                  \
+    if( (point) )                               \
+    {                                           \
+        if( typeid((point)) == typeid(char*) || typeid((point)) == typeid(const char*) ) \
+        {                                        \
+            if( in_hash_table( (point) ) )        \
+            {                                     \
+                log_printf( "&RDISPOSE called on STRALLOC pointer: %s, line %d\n", __FILE__, __LINE__ ); \
+                log_string( "Attempting to correct." ); \
+                if( str_free( (point) ) == -1 )    \
+                log_printf( "&RSTRFREEing bad pointer: %s, line %d\n", __FILE__, __LINE__ ); \
+            }                                     \
+            else                                  \
             delete[] (point);                  \
-      }                                        \
-      else                                     \
-         free( (point) );                      \
-      (point) = nullptr;                       \
-   }                                           \
-   else                                        \
-      (point) = nullptr;                       \
+        }                                        \
+        else                                     \
+        free( (point) );                      \
+        (point) = nullptr;                       \
+    }                                           \
+    else                                        \
+    (point) = nullptr;                       \
 } while(0)
 #endif
 
@@ -740,40 +740,40 @@ do                                             \
 #define QUICKLINK(point)	quick_link((point))
 #if defined(__FreeBSD__)
 #define STRFREE(point)                          \
-do                                              \
+    do                                              \
 {                                               \
-   if((point))                                  \
-   {                                            \
-      if( str_free((point)) == -1 )             \
-         bug( "&RSTRFREEing bad pointer: %s, line %d", __FILE__, __LINE__ ); \
-      (point) = nullptr;                        \
-   }                                            \
+    if((point))                                  \
+    {                                            \
+        if( str_free((point)) == -1 )             \
+        bug( "&RSTRFREEing bad pointer: %s, line %d", __FILE__, __LINE__ ); \
+        (point) = nullptr;                        \
+    }                                            \
 } while(0)
 #else
 #define STRFREE(point)                           \
-do                                               \
+    do                                               \
 {                                                \
-   if((point))                                   \
-   {                                             \
-      if( !in_hash_table( (point) ) )            \
-      {                                          \
-         log_printf( "&RSTRFREE called on str_dup pointer: %s, line %d\n", __FILE__, __LINE__ ); \
-         log_string( "Attempting to correct." ); \
-         free( (point) );                        \
-      }                                          \
-      else if( str_free((point)) == -1 )         \
-         log_printf( "&RSTRFREEing bad pointer: %s, line %d\n", __FILE__, __LINE__ ); \
-      (point) = nullptr;                         \
-   }                                             \
-   else                                          \
-      (point) = nullptr;                         \
+    if((point))                                   \
+    {                                             \
+        if( !in_hash_table( (point) ) )            \
+        {                                          \
+            log_printf( "&RSTRFREE called on str_dup pointer: %s, line %d\n", __FILE__, __LINE__ ); \
+            log_string( "Attempting to correct." ); \
+            free( (point) );                        \
+        }                                          \
+        else if( str_free((point)) == -1 )         \
+        log_printf( "&RSTRFREEing bad pointer: %s, line %d\n", __FILE__, __LINE__ ); \
+        (point) = nullptr;                         \
+    }                                             \
+    else                                          \
+    (point) = nullptr;                         \
 } while(0)
 #endif
 
 #define INDOOR_SECTOR(sect) ( (sect) == SECT_INDOORS ||     \
-                              (sect) == SECT_UNDERWATER ||  \
-                              (sect) == SECT_OCEANFLOOR ||  \
-                              (sect) == SECT_UNDERGROUND )
+        (sect) == SECT_UNDERWATER ||  \
+        (sect) == SECT_OCEANFLOOR ||  \
+        (sect) == SECT_UNDERGROUND )
 
 #define IS_VALID_SN(sn)		( (sn) >=0 && (sn) < MAX_SKILL && skill_table[(sn)] && skill_table[(sn)]->name )
 #define IS_VALID_HERB(sn)	( (sn) >=0 && (sn) < MAX_HERB	&& herb_table[(sn)] && herb_table[(sn)]->name )
@@ -783,7 +783,7 @@ do                                               \
  * Description macros.
  */
 #define PERS(ch, looker, from) ( (looker)->can_see( (ch), (from) ) ? \
-      ( (ch)->isnpc() ? (ch)->short_descr : (ch)->name ) : "Someone" )
+        ( (ch)->isnpc() ? (ch)->short_descr : (ch)->name ) : "Someone" )
 
 #define log_string(txt)		( log_string_plus( LOG_NORMAL, LEVEL_LOG, (txt) ) )
 
@@ -812,7 +812,7 @@ int urange( int, int, int );
 /* object saving defines for fread/write_obj. -- Altrag */
 enum carry_types
 {
-   OS_CARRY, OS_CORPSE
+    OS_CARRY, OS_CORPSE
 };
 
 /*
@@ -822,24 +822,24 @@ enum carry_types
 /* Trimmed down to reduce duplicated types - Samson 1-9-00 */
 enum damage_types
 {
-   DAM_HIT, DAM_SLASH, DAM_STAB, DAM_HACK, DAM_CRUSH, DAM_LASH,
-   DAM_PIERCE, DAM_THRUST, DAM_MAX_TYPE
+    DAM_HIT, DAM_SLASH, DAM_STAB, DAM_HACK, DAM_CRUSH, DAM_LASH,
+    DAM_PIERCE, DAM_THRUST, DAM_MAX_TYPE
 };
 
 // Login Messages
 class lmsg_data
 {
- private:
-   lmsg_data( const lmsg_data & p );
-     lmsg_data & operator=( const lmsg_data & );
+    private:
+        lmsg_data( const lmsg_data & p );
+        lmsg_data & operator=( const lmsg_data & );
 
- public:
-     lmsg_data(  );
-    ~lmsg_data(  );
+    public:
+        lmsg_data(  );
+        ~lmsg_data(  );
 
-   char *name;
-   char *text;
-   short type;
+        char *name;
+        char *text;
+        short type;
 };
 
 /*
@@ -847,101 +847,101 @@ class lmsg_data
  */
 class system_data
 {
- private:
-   system_data( const system_data & p );
-     system_data & operator=( const system_data & );
+    private:
+        system_data( const system_data & p );
+        system_data & operator=( const system_data & );
 
- public:
-     system_data(  );
-    ~system_data(  );
+    public:
+        system_data(  );
+        ~system_data(  );
 
-   void *dlHandle;   // libdl System Handle - Trax
-     bitset < SV_MAX > save_flags;  // Toggles for saving conditions
-   string time_of_max;  // Time of max ever
-   string mud_name;  // Name of mud
-   string admin_email;  // Email address for admin - Samson 10-17-98
-   string password;  // Port access code
-   string telnet; // Store telnet address for who/webwho
-   string http;   // Store web address for who/webwho
-   string dbserver;  // Database server address for SQL support, usually localhost
-   string dbname; // Database name for SQL support
-   string dbuser; // Database username for SQL support
-   string dbpass; // Database password for SQL support
-   time_t motd;   // Last time MOTD was edited
-   time_t imotd;  // Last time IMOTD was edited
-   size_t maxign;
-   size_t maxholiday;
-   int maxplayers;   // Maximum players this boot
-   int alltimemax;   // Maximum players ever
-   int auctionseconds;  // Seconds between auction events
-   int maxvnum;
-   int minguildlevel;
-   int maxcondval;
-   int maximpact;
-   int initcond;
-   int minego;
-   int secpertick;
-   int pulsepersec;
-   int pulsetick;
-   int pulseviolence;
-   int pulsemobile;
-   int pulsecalendar;
-   int pulseenvironment;
-   int pulseskyship;
-   int hoursperday;
-   int daysperweek;
-   int dayspermonth;
-   int monthsperyear;
-   int daysperyear;
-   int hoursunrise;
-   int hourdaybegin;
-   int hournoon;
-   int hoursunset;
-   int hournightbegin;
-   int hourmidnight;
-   int rebootcount;  /* How many minutes to count down for a reboot - Samson 4-22-03 */
-   int gameloopalarm;   /* Number of seconds before game_loop() triggers an alarm due to being hung up - Samson 1-24-05 */
-   short webwho;  // Number of seconds between webwho refreshes, 0 for no refresh - Samson 5-13-06
-   short read_all_mail; /* Read all player mail(was 54) */
-   short read_mail_free;   /* Read mail for free (was 51) */
-   short write_mail_free;  /* Write mail for free(was 51) */
-   short take_others_mail; /* Take others mail (was 54)   */
-   short build_level;   /* Level of build channel LEVEL_BUILD */
-   short level_modify_proto;  /* Level to modify prototype stuff LEVEL_LESSER */
-   short level_override_private; /* override private flag */
-   short level_mset_player;   /* Level to mset a player */
-   short bash_plr_vs_plr;  /* Bash mod player vs. player */
-   short bash_nontank;  /* Bash mod basher != primary attacker */
-   short gouge_plr_vs_plr; /* Gouge mod player vs. player */
-   short gouge_nontank; /* Gouge mod player != primary attacker */
-   short stun_plr_vs_plr;  /* Stun mod player vs. player */
-   short stun_regular;  /* Stun difficult */
-   short dodge_mod;  /* Divide dodge chance by */
-   short parry_mod;  /* Divide parry chance by */
-   short tumble_mod; /* Divide tumble chance by */
-   short dam_plr_vs_plr;   /* Damage mod player vs. player */
-   short dam_plr_vs_mob;   /* Damage mod player vs. mobile */
-   short dam_mob_vs_plr;   /* Damage mod mobile vs. player */
-   short dam_mob_vs_mob;   /* Damage mod mobile vs. mobile */
-   short level_getobjnotake;  /* Get objects without take flag */
-   short level_forcepc; /* The level at which you can use force on players. */
-   short bestow_dif; /* Max # of levels between trust and command level for a bestow to work --Blodkai */
-   short save_frequency;   /* How often to autosave someone */
-   short newbie_purge;  /* Level to auto-purge newbies at - Samson 12-27-98 */
-   short regular_purge; /* Level to purge normal players at - Samson 12-27-98 */
-   short mapsize; /* Laziness feature mostly. Changes the overland map visibility radius */
-   short playersonline;
-   bool NO_NAME_RESOLVING; /* Hostnames are not resolved  */
-   bool DENY_NEW_PLAYERS;  /* New players cannot connect  */
-   bool WAIT_FOR_AUTH;  /* New players must be auth'ed */
-   bool check_imm_host; /* Do we check immortal's hosts? */
-   bool save_pets;   /* Do pets save? */
-   bool WIZLOCK;  /* Is the game wizlocked? - Samson 8-2-98 */
-   bool IMPLOCK;  /* Is the game implocked? - Samson 8-2-98 */
-   bool LOCKDOWN; /* Is the game locked down? - Samson 8-23-98 */
-   bool CLEANPFILES; /* Should the mud clean up pfiles daily? - Samson 12-27-98 */
-   bool TESTINGMODE; /* Blocks file copies to main port when active - Samson 1-31-99 */
-   bool crashhandler;   /* Do we intercept SIGSEGV - Samson 3-11-04 */
+        void *dlHandle;   // libdl System Handle - Trax
+        bitset < SV_MAX > save_flags;  // Toggles for saving conditions
+        string time_of_max;  // Time of max ever
+        string mud_name;  // Name of mud
+        string admin_email;  // Email address for admin - Samson 10-17-98
+        string password;  // Port access code
+        string telnet; // Store telnet address for who/webwho
+        string http;   // Store web address for who/webwho
+        string dbserver;  // Database server address for SQL support, usually localhost
+        string dbname; // Database name for SQL support
+        string dbuser; // Database username for SQL support
+        string dbpass; // Database password for SQL support
+        time_t motd;   // Last time MOTD was edited
+        time_t imotd;  // Last time IMOTD was edited
+        size_t maxign;
+        size_t maxholiday;
+        int maxplayers;   // Maximum players this boot
+        int alltimemax;   // Maximum players ever
+        int auctionseconds;  // Seconds between auction events
+        int maxvnum;
+        int minguildlevel;
+        int maxcondval;
+        int maximpact;
+        int initcond;
+        int minego;
+        int secpertick;
+        int pulsepersec;
+        int pulsetick;
+        int pulseviolence;
+        int pulsemobile;
+        int pulsecalendar;
+        int pulseenvironment;
+        int pulseskyship;
+        int hoursperday;
+        int daysperweek;
+        int dayspermonth;
+        int monthsperyear;
+        int daysperyear;
+        int hoursunrise;
+        int hourdaybegin;
+        int hournoon;
+        int hoursunset;
+        int hournightbegin;
+        int hourmidnight;
+        int rebootcount;  /* How many minutes to count down for a reboot - Samson 4-22-03 */
+        int gameloopalarm;   /* Number of seconds before game_loop() triggers an alarm due to being hung up - Samson 1-24-05 */
+        short webwho;  // Number of seconds between webwho refreshes, 0 for no refresh - Samson 5-13-06
+        short read_all_mail; /* Read all player mail(was 54) */
+        short read_mail_free;   /* Read mail for free (was 51) */
+        short write_mail_free;  /* Write mail for free(was 51) */
+        short take_others_mail; /* Take others mail (was 54)   */
+        short build_level;   /* Level of build channel LEVEL_BUILD */
+        short level_modify_proto;  /* Level to modify prototype stuff LEVEL_LESSER */
+        short level_override_private; /* override private flag */
+        short level_mset_player;   /* Level to mset a player */
+        short bash_plr_vs_plr;  /* Bash mod player vs. player */
+        short bash_nontank;  /* Bash mod basher != primary attacker */
+        short gouge_plr_vs_plr; /* Gouge mod player vs. player */
+        short gouge_nontank; /* Gouge mod player != primary attacker */
+        short stun_plr_vs_plr;  /* Stun mod player vs. player */
+        short stun_regular;  /* Stun difficult */
+        short dodge_mod;  /* Divide dodge chance by */
+        short parry_mod;  /* Divide parry chance by */
+        short tumble_mod; /* Divide tumble chance by */
+        short dam_plr_vs_plr;   /* Damage mod player vs. player */
+        short dam_plr_vs_mob;   /* Damage mod player vs. mobile */
+        short dam_mob_vs_plr;   /* Damage mod mobile vs. player */
+        short dam_mob_vs_mob;   /* Damage mod mobile vs. mobile */
+        short level_getobjnotake;  /* Get objects without take flag */
+        short level_forcepc; /* The level at which you can use force on players. */
+        short bestow_dif; /* Max # of levels between trust and command level for a bestow to work --Blodkai */
+        short save_frequency;   /* How often to autosave someone */
+        short newbie_purge;  /* Level to auto-purge newbies at - Samson 12-27-98 */
+        short regular_purge; /* Level to purge normal players at - Samson 12-27-98 */
+        short mapsize; /* Laziness feature mostly. Changes the overland map visibility radius */
+        short playersonline;
+        bool NO_NAME_RESOLVING; /* Hostnames are not resolved  */
+        bool DENY_NEW_PLAYERS;  /* New players cannot connect  */
+        bool WAIT_FOR_AUTH;  /* New players must be auth'ed */
+        bool check_imm_host; /* Do we check immortal's hosts? */
+        bool save_pets;   /* Do pets save? */
+        bool WIZLOCK;  /* Is the game wizlocked? - Samson 8-2-98 */
+        bool IMPLOCK;  /* Is the game implocked? - Samson 8-2-98 */
+        bool LOCKDOWN; /* Is the game locked down? - Samson 8-23-98 */
+        bool CLEANPFILES; /* Should the mud clean up pfiles daily? - Samson 12-27-98 */
+        bool TESTINGMODE; /* Blocks file copies to main port when active - Samson 1-31-99 */
+        bool crashhandler;   /* Do we intercept SIGSEGV - Samson 3-11-04 */
 };
 
 /*
@@ -961,13 +961,13 @@ const int TYPE_DISEASE = 5000;   /* allows for 1000 racial types  */
  */
 enum target_types
 {
-   TAR_IGNORE, TAR_CHAR_OFFENSIVE, TAR_CHAR_DEFENSIVE, TAR_CHAR_SELF, TAR_OBJ_INV
+    TAR_IGNORE, TAR_CHAR_OFFENSIVE, TAR_CHAR_DEFENSIVE, TAR_CHAR_SELF, TAR_OBJ_INV
 };
 
 enum skill_types
 {
-   SKILL_UNKNOWN, SKILL_SPELL, SKILL_SKILL, SKILL_COMBAT, SKILL_TONGUE,
-   SKILL_HERB, SKILL_RACIAL, SKILL_DISEASE, SKILL_LORE
+    SKILL_UNKNOWN, SKILL_SPELL, SKILL_SKILL, SKILL_COMBAT, SKILL_TONGUE,
+    SKILL_HERB, SKILL_RACIAL, SKILL_DISEASE, SKILL_LORE
 };
 
 /*
@@ -975,11 +975,11 @@ enum skill_types
  */
 enum skill_spell_flags
 {
-   SF_WATER, SF_EARTH, SF_AIR, SF_ASTRAL, SF_AREA, SF_DISTANT,
-   SF_REVERSE, SF_NOSELF, SF_NOCHARGE, SF_ACCUMULATIVE, SF_RECASTABLE,
-   SF_NOSCRIBE, SF_NOBREW, SF_GROUPSPELL, SF_OBJECT, SF_CHARACTER,
-   SF_SECRETSKILL, SF_PKSENSITIVE, SF_STOPONFAIL, SF_NOFIGHT,
-   SF_NODISPEL, SF_RANDOMTARGET, SF_NOMOUNT, SF_NOMOB, MAX_SF_FLAG
+    SF_WATER, SF_EARTH, SF_AIR, SF_ASTRAL, SF_AREA, SF_DISTANT,
+    SF_REVERSE, SF_NOSELF, SF_NOCHARGE, SF_ACCUMULATIVE, SF_RECASTABLE,
+    SF_NOSCRIBE, SF_NOBREW, SF_GROUPSPELL, SF_OBJECT, SF_CHARACTER,
+    SF_SECRETSKILL, SF_PKSENSITIVE, SF_STOPONFAIL, SF_NOFIGHT,
+    SF_NODISPEL, SF_RANDOMTARGET, SF_NOMOUNT, SF_NOMOB, MAX_SF_FLAG
 };
 
 /*
@@ -987,61 +987,61 @@ enum skill_spell_flags
  */
 class skill_type
 {
- private:
-   skill_type( const skill_type & s );
-     skill_type & operator=( const skill_type & );
+    private:
+        skill_type( const skill_type & s );
+        skill_type & operator=( const skill_type & );
 
- public:
-     skill_type(  );
-    ~skill_type(  );
+    public:
+        skill_type(  );
+        ~skill_type(  );
 
-     list < class smaug_affect * >affects;   /* Spell affects, if any */
-     bitset < MAX_SF_FLAG > flags;  /* Flags */
-   SPELL_FUN *spell_fun;   /* Spell pointer (for spells) */
-   DO_FUN *skill_fun;   /* Skill pointer (for skills) */
-   char *name; /* Name of skill */
-   char *spell_fun_name;   /* Spell function name - Trax */
-   char *skill_fun_name;   /* Skill function name - Trax */
-   char *noun_damage;   /* Damage message    */
-   char *msg_off; /* Wear off message     */
-   char *hit_char;   /* Success message to caster  */
-   char *hit_vict;   /* Success message to victim  */
-   char *hit_room;   /* Success message to room */
-   char *hit_dest;   /* Success message to dest room */
-   char *miss_char;  /* Failure message to caster  */
-   char *miss_vict;  /* Failure message to victim  */
-   char *miss_room;  /* Failure message to room */
-   char *die_char;   /* Victim death msg to caster */
-   char *die_vict;   /* Victim death msg to victim */
-   char *die_room;   /* Victim death msg to room   */
-   char *imm_char;   /* Victim immune msg to caster   */
-   char *imm_vict;   /* Victim immune msg to victim   */
-   char *imm_room;   /* Victim immune msg to room  */
-   char *dice; /* Dice roll         */
-   char *author;  /* Skill's author */
-   char *components; /* Spell components, if any   */
-   char *teachers;   /* Skill requires a special teacher */
-   char *helptext;   /* Help description for dynamic system */
-   int info;   /* Spell action/class/etc  */
-   int ego; /* Adjusted ego value used in object creation, accounts for SMAUG_AFF's */
-   int value;  /* Misc value        */
-   int spell_sector; /* Sector Spell work    */
-   short skill_level[MAX_CLASS]; /* Level needed by class */
-   short skill_adept[MAX_CLASS]; /* Max attainable % in this skill */
-   short race_level[MAX_RACE];   /* Racial abilities: level */
-   short race_adept[MAX_RACE];   /* Racial abilities: adept */
-   short target;  /* Legal targets     */
-   short minimum_position; /* Position for caster / user */
-   short slot; /* Slot for #OBJECT loading   */
-   short min_mana;   /* Minimum mana used    */
-   short beats;   /* Rounds required to use skill */
-   short guild;   /* Which guild the skill belongs to */
-   short min_level;  /* Minimum level to be able to cast */
-   short type; /* Spell/Skill/Weapon/Tongue  */
-   short range;   /* Range of spell (rooms)  */
-   short saves;   /* What saving spell applies  */
-   short difficulty; /* Difficulty of casting/learning */
-   short participants;  /* # of required participants */
+        list < class smaug_affect * >affects;   /* Spell affects, if any */
+        bitset < MAX_SF_FLAG > flags;  /* Flags */
+        SPELL_FUN *spell_fun;   /* Spell pointer (for spells) */
+        DO_FUN *skill_fun;   /* Skill pointer (for skills) */
+        char *name; /* Name of skill */
+        char *spell_fun_name;   /* Spell function name - Trax */
+        char *skill_fun_name;   /* Skill function name - Trax */
+        char *noun_damage;   /* Damage message    */
+        char *msg_off; /* Wear off message     */
+        char *hit_char;   /* Success message to caster  */
+        char *hit_vict;   /* Success message to victim  */
+        char *hit_room;   /* Success message to room */
+        char *hit_dest;   /* Success message to dest room */
+        char *miss_char;  /* Failure message to caster  */
+        char *miss_vict;  /* Failure message to victim  */
+        char *miss_room;  /* Failure message to room */
+        char *die_char;   /* Victim death msg to caster */
+        char *die_vict;   /* Victim death msg to victim */
+        char *die_room;   /* Victim death msg to room   */
+        char *imm_char;   /* Victim immune msg to caster   */
+        char *imm_vict;   /* Victim immune msg to victim   */
+        char *imm_room;   /* Victim immune msg to room  */
+        char *dice; /* Dice roll         */
+        char *author;  /* Skill's author */
+        char *components; /* Spell components, if any   */
+        char *teachers;   /* Skill requires a special teacher */
+        char *helptext;   /* Help description for dynamic system */
+        int info;   /* Spell action/class/etc  */
+        int ego; /* Adjusted ego value used in object creation, accounts for SMAUG_AFF's */
+        int value;  /* Misc value        */
+        int spell_sector; /* Sector Spell work    */
+        short skill_level[MAX_CLASS]; /* Level needed by class */
+        short skill_adept[MAX_CLASS]; /* Max attainable % in this skill */
+        short race_level[MAX_RACE];   /* Racial abilities: level */
+        short race_adept[MAX_RACE];   /* Racial abilities: adept */
+        short target;  /* Legal targets     */
+        short minimum_position; /* Position for caster / user */
+        short slot; /* Slot for #OBJECT loading   */
+        short min_mana;   /* Minimum mana used    */
+        short beats;   /* Rounds required to use skill */
+        short guild;   /* Which guild the skill belongs to */
+        short min_level;  /* Minimum level to be able to cast */
+        short type; /* Spell/Skill/Weapon/Tongue  */
+        short range;   /* Range of spell (rooms)  */
+        short saves;   /* What saving spell applies  */
+        short difficulty; /* Difficulty of casting/learning */
+        short participants;  /* # of required participants */
 };
 
 /*
@@ -1402,108 +1402,108 @@ void weather_update( void );
 // This used to be the old ext_flagstring converted to C++ and using strings so it can't overflow the temporary buffer.
 template < size_t N > const char *bitset_string( bitset < N > bits, const char *flagarray[] )
 {
-   static string s;
+    static string s;
 
-   s.clear();
+    s.clear();
 
-   for( size_t i = 0; i < bits.size (); ++i )
-   {
-      if( bits[i] )
-      {
-         s.append( flagarray[i] );
-         s.append( 1, ' ' );
-      }
-   }
-   strip_tspace(s); // get rid of final space
+    for( size_t i = 0; i < bits.size (); ++i )
+    {
+        if( bits[i] )
+        {
+            s.append( flagarray[i] );
+            s.append( 1, ' ' );
+        }
+    }
+    strip_tspace(s); // get rid of final space
 
-   return s.c_str();
+    return s.c_str();
 }
 
 // This temlate is used during file reading to set flags based on the string names.
 // Loosely resembled Remcon's WEXTKEY macro from his LoP codebase.
 template < size_t N > void flag_set( FILE * fp, bitset < N > &field, const char *flagarray[] )
 {
-   string flags, flag;
+    string flags, flag;
 
-   flags = fread_flagstring( fp );
-   while( flags[0] != '\0' )
-   {
-      flags = one_argument( flags, flag );
-      int value = get_flag( flag, flagarray, N );
+    flags = fread_flagstring( fp );
+    while( flags[0] != '\0' )
+    {
+        flags = one_argument( flags, flag );
+        int value = get_flag( flag, flagarray, N );
 
-      // Casting N down to an int might not look good, but we can't check for -1 any other way.
-      if( value < 0 || value >= ( int )N )
-         bug( "%s: Invalid flag: %s", __func__, flag.c_str() );
-      else
-         field.set( value );
-   }
+        // Casting N down to an int might not look good, but we can't check for -1 any other way.
+        if( value < 0 || value >= ( int )N )
+            bug( "%s: Invalid flag: %s", __func__, flag.c_str() );
+        else
+            field.set( value );
+    }
 }
 
 // Just like the above, only doesn't read from a file. Just sets the flags from the specified string.
 template < size_t N > void flag_string_set( string & original, bitset < N > &field, const char *flagarray[] )
 {
-   string flag;
+    string flag;
 
-   while( !original.empty(  ) )
-   {
-      original = one_argument( original, flag );
-      int value = get_flag( flag, flagarray, N );
+    while( !original.empty(  ) )
+    {
+        original = one_argument( original, flag );
+        int value = get_flag( flag, flagarray, N );
 
-      // Casting N down to an int might not look good, but we can't check for -1 any other way.
-      if( value < 0 || value >= ( int )N )
-         bug( "%s: Invalid flag: %s", __func__, flag.c_str(  ) );
-      else
-         field.set( value );
-   }
+        // Casting N down to an int might not look good, but we can't check for -1 any other way.
+        if( value < 0 || value >= ( int )N )
+            bug( "%s: Invalid flag: %s", __func__, flag.c_str(  ) );
+        else
+            field.set( value );
+    }
 }
 
 template < class N > extra_descr_data * get_extra_descr( const string & name, N * target )
 {
-   list < extra_descr_data * >::iterator ied;
+    list < extra_descr_data * >::iterator ied;
 
-   for( ied = target->extradesc.begin(  ); ied != target->extradesc.end(  ); ++ied )
-   {
-      extra_descr_data *ed = *ied;
+    for( ied = target->extradesc.begin(  ); ied != target->extradesc.end(  ); ++ied )
+    {
+        extra_descr_data *ed = *ied;
 
-      if( is_name2_prefix( name, ed->keyword ) )
-      {
-         if( !ed->desc.empty(  ) )
-            return ed;
-      }
-   }
-   return nullptr;
+        if( is_name2_prefix( name, ed->keyword ) )
+        {
+            if( !ed->desc.empty(  ) )
+                return ed;
+        }
+    }
+    return nullptr;
 }
 
 template < class N > extra_descr_data * set_extra_descr( N * target, const string & name )
 {
-   extra_descr_data *desc = nullptr;
-   list < extra_descr_data * >::iterator ied;
+    extra_descr_data *desc = nullptr;
+    list < extra_descr_data * >::iterator ied;
 
-   for( ied = target->extradesc.begin(  ); ied != target->extradesc.end(  ); ++ied )
-   {
-      extra_descr_data *ed = *ied;
+    for( ied = target->extradesc.begin(  ); ied != target->extradesc.end(  ); ++ied )
+    {
+        extra_descr_data *ed = *ied;
 
-      if( ed->keyword.find( name ) != string::npos )
-      {
-         desc = ed;
-         break;
-      }
-   }
+        if( ed->keyword.find( name ) != string::npos )
+        {
+            desc = ed;
+            break;
+        }
+    }
 
-   if( !desc )
-   {
-      desc = new extra_descr_data;
-      desc->keyword = name;
-      target->extradesc.push_back( desc );
-      ++top_ed;
-   }
-   return desc;
+    if( !desc )
+    {
+        desc = new extra_descr_data;
+        desc->keyword = name;
+        target->extradesc.push_back( desc );
+        ++top_ed;
+    }
+    return desc;
 }
 
 // Thanks to David Haley for this little trick. A nifty little template that behaves like DISPOSE used to.
 template < typename T > void deleteptr( T * &ptr )
 {
-   delete ptr;
-   ptr = nullptr;
+    delete ptr;
+    ptr = nullptr;
 }
 #endif

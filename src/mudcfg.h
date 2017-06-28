@@ -175,7 +175,7 @@ const int OBJ_VNUM_OVFIRE = 11005;         // Overland environmental fire
 const int OBJ_VNUM_CAMPGEAR = 11006;       // Generic camping gear object
 const int OBJ_VNUM_FIRESEED = 11007;       // Fireseed object for spell_fireseed - Samson 10-13-98
 const int OBJ_VNUM_FORAGE = 11027;         // This is the start of a range of 10 vnums - Samson 5-1-04
-                                           //  ( 11027 -> 11037 )
+//  ( 11027 -> 11037 )
 const int OBJ_VNUM_FLAMETHROWER = 11039;   // Gnomish Flamethrower - for the Tinker skill
 const int OBJ_VNUM_LADDER = 11040;         // Gnomish Ladder - for the Tinker skill
 const int OBJ_VNUM_DIGGER = 11041;         // Gnomish Differ - for the Tinker skill
@@ -186,7 +186,7 @@ const int OBJ_VNUM_RUNE = 11045;           // Base object used to generate runes
 const int OBJ_VNUM_MAPS = 11046;           // Object used for mapout - Samson 1/28/06
 const int OBJ_VNUM_ORE_BASE = 11299;       // This object does not actually exist, it's used by the blacksmithing code in treasure.cpp
 const int OBJ_VNUM_MINING = 11300;         // This is the start of a range of 5 vnums - Samson 5-1-04
-                                           // 11300 -> 11304 [11305 and 11306 are special cases]
+// 11300 -> 11304 [11305 and 11306 are special cases]
 const int OBJ_VNUM_TAN_JACKET = 11368;     // Block of objects used by the Tan skill in skills.cpp
 const int OBJ_VNUM_TAN_BOOTS = 11369;
 const int OBJ_VNUM_TAN_GLOVES = 11370;
@@ -285,7 +285,7 @@ const int ROOM_VNUM_ENDREDEEM = 11412; /* Sindhae prize redemption ending room -
  */
 enum acon_types
 {
-   ACON_ONE, ACON_ASTRAL, ACON_IMMORTAL, ACON_MAX
+    ACON_ONE, ACON_ASTRAL, ACON_IMMORTAL, ACON_MAX
 };
 
 // Playable Races
@@ -293,10 +293,10 @@ enum acon_types
 // Also make sure the array in const.cpp is synced with this.
 enum race_types
 {
-   RACE_HUMAN, RACE_HIGH_ELF, RACE_DWARF, RACE_HALFLING, RACE_PIXIE,
-   RACE_HALF_OGRE, RACE_HALF_ORC, RACE_HALF_TROLL, RACE_HALF_ELF, RACE_GITH,
-   RACE_MINOTAUR, RACE_DUERGAR, RACE_CENTAUR, RACE_IGUANADON,
-   RACE_GNOME, RACE_DROW, RACE_WILD_ELF, RACE_INSECTOID, RACE_SAUGHIN, RACE_19
+    RACE_HUMAN, RACE_HIGH_ELF, RACE_DWARF, RACE_HALFLING, RACE_PIXIE,
+    RACE_HALF_OGRE, RACE_HALF_ORC, RACE_HALF_TROLL, RACE_HALF_ELF, RACE_GITH,
+    RACE_MINOTAUR, RACE_DUERGAR, RACE_CENTAUR, RACE_IGUANADON,
+    RACE_GNOME, RACE_DROW, RACE_WILD_ELF, RACE_INSECTOID, RACE_SAUGHIN, RACE_19
 };
 
 /* NPC Races */
@@ -469,10 +469,10 @@ const int CLASS_NONE = -1; /* For skill/spells according to guild */
 // You also need to make sure the array in const.cpp is synced with this.
 enum class_types
 {
-   CLASS_MAGE, CLASS_CLERIC, CLASS_ROGUE, CLASS_WARRIOR, CLASS_NECROMANCER,
-   CLASS_DRUID, CLASS_RANGER, CLASS_MONK, CLASS_PC08, CLASS_PC09,
-   CLASS_ANTIPALADIN, CLASS_PALADIN, CLASS_BARD, CLASS_PC13, CLASS_PC14, CLASS_PC15,
-   CLASS_PC16, CLASS_PC17, CLASS_PC18, CLASS_PC19
+    CLASS_MAGE, CLASS_CLERIC, CLASS_ROGUE, CLASS_WARRIOR, CLASS_NECROMANCER,
+    CLASS_DRUID, CLASS_RANGER, CLASS_MONK, CLASS_PC08, CLASS_PC09,
+    CLASS_ANTIPALADIN, CLASS_PALADIN, CLASS_BARD, CLASS_PC13, CLASS_PC14, CLASS_PC15,
+    CLASS_PC16, CLASS_PC17, CLASS_PC18, CLASS_PC19
 };
 
 /*
@@ -480,17 +480,17 @@ enum class_types
  */
 enum lang_array
 {
-   LANG_COMMON, LANG_ELVEN, LANG_DWARVEN, LANG_PIXIE,
-   LANG_OGRE, LANG_ORCISH, LANG_TROLLISH, LANG_RODENT,
-   LANG_INSECTOID, LANG_MAMMAL, LANG_REPTILE,
-   LANG_DRAGON, LANG_SPIRITUAL, LANG_MAGICAL,
-   LANG_GOBLIN, LANG_GOD, LANG_ANCIENT, LANG_HALFLING,
-   LANG_CLAN, LANG_GITH, LANG_MINOTAUR, LANG_CENTAUR,
-   LANG_GNOME, LANG_SAHUAGIN, LANG_UNKNOWN
+    LANG_COMMON, LANG_ELVEN, LANG_DWARVEN, LANG_PIXIE,
+    LANG_OGRE, LANG_ORCISH, LANG_TROLLISH, LANG_RODENT,
+    LANG_INSECTOID, LANG_MAMMAL, LANG_REPTILE,
+    LANG_DRAGON, LANG_SPIRITUAL, LANG_MAGICAL,
+    LANG_GOBLIN, LANG_GOD, LANG_ANCIENT, LANG_HALFLING,
+    LANG_CLAN, LANG_GITH, LANG_MINOTAUR, LANG_CENTAUR,
+    LANG_GNOME, LANG_SAHUAGIN, LANG_UNKNOWN
 };
 
 #define VALID_LANGS    ( LANG_COMMON | LANG_ELVEN | LANG_DWARVEN | LANG_PIXIE  \
-		       | LANG_OGRE | LANG_ORCISH | LANG_TROLLISH | LANG_GOBLIN \
-		       | LANG_HALFLING | LANG_GITH | LANG_MINOTAUR | LANG_CENTAUR | LANG_GNOME \
-			 | LANG_REPTILE | LANG_INSECTOID | LANG_SAHUAGIN )
+        | LANG_OGRE | LANG_ORCISH | LANG_TROLLISH | LANG_GOBLIN \
+        | LANG_HALFLING | LANG_GITH | LANG_MINOTAUR | LANG_CENTAUR | LANG_GNOME \
+        | LANG_REPTILE | LANG_INSECTOID | LANG_SAHUAGIN )
 #endif

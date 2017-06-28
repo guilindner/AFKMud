@@ -34,7 +34,7 @@
 
 enum realm_types
 {
-   REALM_NONE, REALM_QUEST, REALM_PR, REALM_QA, REALM_BUILDER, REALM_CODER, REALM_ADMIN, REALM_OWNER, MAX_REALM
+    REALM_NONE, REALM_QUEST, REALM_PR, REALM_QA, REALM_BUILDER, REALM_CODER, REALM_ADMIN, REALM_OWNER, MAX_REALM
 };
 
 extern const char *realm_type_names[MAX_REALM];
@@ -45,38 +45,38 @@ extern const char *realm_type_names[MAX_REALM];
 
 class realm_roster_data
 {
- private:
-   realm_roster_data( const realm_roster_data & r );
-     realm_roster_data & operator=( const realm_roster_data & );
+    private:
+        realm_roster_data( const realm_roster_data & r );
+        realm_roster_data & operator=( const realm_roster_data & );
 
- public:
-     realm_roster_data(  );
-    ~realm_roster_data(  );
+    public:
+        realm_roster_data(  );
+        ~realm_roster_data(  );
 
-   string name;
-   time_t joined;
+        string name;
+        time_t joined;
 };
 
 class realm_data
 {
- private:
-   realm_data( const realm_data & r );
-     realm_data & operator=( const realm_data & );
+    private:
+        realm_data( const realm_data & r );
+        realm_data & operator=( const realm_data & );
 
- public:
-     realm_data(  );
-    ~realm_data(  );
+    public:
+        realm_data(  );
+        ~realm_data(  );
 
-   list < realm_roster_data * >memberlist;
-   string filename;  // Realm filename
-   string name;      // Realm name
-   string realmdesc; // A brief description of the Realm
-   string leader;    // Head Realm leader
-   string badge;     // Realm badge on who/where/to_room
-   string leadrank;  // Leader's rank
-   int board;        // Vnum of Realm board
-   short type;       // See realm type defines
-   short members;    // Number of members
+        list < realm_roster_data * >memberlist;
+        string filename;  // Realm filename
+        string name;      // Realm name
+        string realmdesc; // A brief description of the Realm
+        string leader;    // Head Realm leader
+        string badge;     // Realm badge on who/where/to_room
+        string leadrank;  // Leader's rank
+        int board;        // Vnum of Realm board
+        short type;       // See realm type defines
+        short members;    // Number of members
 };
 
 extern list < realm_data * >realmlist;

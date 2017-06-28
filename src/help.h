@@ -37,14 +37,14 @@
  */
 struct help_data
 {
-   help_data(  );
-   ~help_data(  );
+    help_data(  );
+    ~help_data(  );
 
-   string keyword;
-   string related;
-   string text;
-   short level;
-   short webinvis;
+    string keyword;
+    string related;
+    string text;
+    short level;
+    short webinvis;
 };
 
 #endif
