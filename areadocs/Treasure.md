@@ -1,8 +1,5 @@
-Random Treasure Generation Documentation
-
-Written by Dwip, 6/17/03
-Modified by Samson, 11/25/04
------------------------------
+Random Treasure Generation
+==========================
 
 Overview:
 

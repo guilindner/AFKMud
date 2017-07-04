@@ -1,9 +1,5 @@
 Miscelaneous blocks
--------------------
-
-Last Modified by Samson, Nov. 26, 2014
-
-=========================================================================================================
+===================
 
 Exit block - Used inside of #ROOM blocks.
 
@@ -111,7 +107,6 @@ Attackable walls can only be damaged by siege engines - which don't yet exist in
 Each grade of wall is stronger than the one below it. When setting wall flags, only
 use one flag, combining them will only result in the greatest flag being acknowledged.
 
-=========================================================================================================
 
 An Extra Description block:
 ---------------------------
@@ -138,8 +133,6 @@ The detailed text displayed when a player uses the look command on one of the ke
 #ENDEXDESC
 ----------
 String literal required to mark the end of the block.
-
-=========================================================================================================
 
 A Mudprog block:
 ----------------

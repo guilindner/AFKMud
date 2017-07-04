@@ -1,6 +1,5 @@
-=== The #MOBILE block
-
-Last Modified by Samson, Nov. 26, 2014
+The #MOBILE block
+=================
 
 Mobiles add life to an otherwise boring place. Afterall, you need people to talk to!
 A well constructed area should have several mobiles populating it. Whether they are there
@@ -170,7 +169,7 @@ The names of the flags this mobile has set. Separate names with spaces.
 Choose from the following table:
 
 FLAG NAME     | DESCRIPTION
---------------+-------------------------------------------------------
+--------------|-------------------------------------------------------
 npc           | MUST be included for all mobs ( autoset on bootup ).
 sentinel      | Mob never moves from its room.
 scavenger     | Mob picks up items.
@@ -234,7 +233,7 @@ List of magical affects this mobile is affected by. Separate names with spaces.
 Choose from the following table:
 
 Effect         | Details
----------------+-------------------------------------------------------
+---------------|-------------------------------------------------------
 blind          | Mob is blinded. (Kinda pointless :P)
 invisible      | Mob is invisible.
 detect_evil    | Mob can detect evil.
@@ -274,30 +273,20 @@ silence        | Mob cannot speak or cast spells.
 growth         | Mob is too large to be bashed.
 tree_travel    | Can pass through thick forest that is otherwise impassible.
 passdoor       | Can pass through otherwise closed doors.
-quiv           | Set by the game when a player uses the Quivering Palm skill.
-                 Can only be used once per day.
+quiv           | Set by the game when a player uses the Quivering Palm skill. Can only be used once per day.
 haste          | Doubles the number of attacks in combat.
 slow           | Halves the number of attacks in combat.
 notrack        | The target cannot be tracked using the track skill.
-elvensong      | Set by the game when a player uses the Elvensong skill.
-                 Can only be used once per day.
-bladesong      | Set by the game when a player uses the Bladesong skill.
-                 Can only be used once per day.
-reverie        | Set by the game when a player uses the Reverie skill.
-                 Can only be used once per day.
+elvensong      | Set by the game when a player uses the Elvensong skill. Can only be used once per day.
+bladesong      | Set by the game when a player uses the Bladesong skill. Can only be used once per day.
+reverie        | Set by the game when a player uses the Reverie skill. Can only be used once per day.
 tenacity       | Improves a player's armor class by -4 when in use.
-deathsong      | Set by the game when a player uses the Deathsong skill.
-                 Can only be used once per day.
+deathsong      | Set by the game when a player uses the Deathsong skill. Can only be used once per day.
 possess        | Set by the game when an immortal uses the switch command.
-enlighten      | Set by the game when a player uses the Enlightenment skill.
-                 Can only be used once per day.
-treetalk       | Set by the game when a player uses the Treetalk skill.
-                 Lasts for one hour.
-spamguard      | Set by the game when a player is flagged as a command spammer.
-                 This can last progressively longer depending on how often the
-                 player is flagged.
-bash           | Set by the game when a player has used the Bash skill.
-                 Victim is affected for 4 combat rounds.
+enlighten      | Set by the game when a player uses the Enlightenment skill. Can only be used once per day.
+treetalk       | Set by the game when a player uses the Treetalk skill. Lasts for one hour.
+spamguard      | Set by the game when a player is flagged as a command spammer. This can last progressively longer depending on how often the player is flagged.
+bash           | Set by the game when a player has used the Bash skill. Victim is affected for 4 combat rounds.
 
 Bodyparts           <string>~
 -----------------------------
@@ -305,7 +294,7 @@ The list of body parts this mobile has. Separate names with spaces.
 Choose from the following table:
 
 Part          | Details
---------------+-----------------------------------
+--------------|-----------------------------------
 head          | Has a head. Most mobs probably need this.
 arms          | Has arms. Typically used for humanoid forms.
 legs          | Has legs. Can be for any humanoid or animal form.
@@ -414,7 +403,7 @@ List of special defense flags this mobile has set.
 Choose from the following:
 
 Defense       | Details
---------------+-----------------------------------
+--------------|-----------------------------------
 parry         | Allows the NPC to parry attacks.
 dodge         | Allows the NPC to dodge attacks.
 heal          | Allows the NPC to cast the Heal spell.
@@ -469,16 +458,13 @@ The shop information values.
 For a 28hr shop, specify open of 0 and close of 28 ( unmodified code ). Yes, the game's unmodified clock is a 28hr day.
 
 #MUDPROG
-#ENDPROG
---------------
+--------
 See the Misc.txt file for the format of Mudprog blocks. These are optional.
 
 #ENDMOBILE
 ----------
 String literal. This ending tag is required to mark the end of a #MOBILE block.
 If it is left out, the file will be assumed to be corrupt.
-
-===========================================================================================
 
 An example of a finished mobile, with an attatched mobprogram:
 (Mudprogs are covered in a seperate file)

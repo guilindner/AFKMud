@@ -1,7 +1,5 @@
 Offline editing of Overland map files
--------------------------------------
-
-Last modified by Samson, Dec. 25, 2006
+=====================================
 
 First thing you need obviously would be a premade image file that
 represents your mud's world. It needs to be in png format to be read

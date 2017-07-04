@@ -1,5 +1,5 @@
-How to add a new continent to the Overland - Version 3.02
----------------------------------------------------------
+How to add a new continent to the Overland
+==========================================
 
 Version 3.02 - Samson: Updated for current codebase standards on Nov. 26, 2014.
 Further typo and logic fixes provided by RazorZero 9/23/03

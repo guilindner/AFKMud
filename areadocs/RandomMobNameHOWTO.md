@@ -1,7 +1,5 @@
-Random Mobile Names HOWTO
-
-Version 0.1
-Written by Tarl
+Random Mobile Names
+===================
 
 One of the additions we have made to the stock smaug codebase is the ability to 
 allow mobiles to have random names. This document aims to describe the methods 
@@ -119,17 +117,8 @@ Thats it for the file format section.
 
 
 Mobile Setup
+------------
 
 In order to tell a mobile to utilise the random name code, mobs should be mset name namegen_example
 
-Similarly, any occurances of the word namegen (note that this should really be namegen, not namegen_example) in the short and long 
-descriptions of the mobile will be replaced with the mobiles new name.
-
-Thats it for the mobile setup section.
-
-You should now have randomly named mobiles in your MUD. 
-
-Thank you for using the AFKMud codebase, and if you have any problems with either the codebase, or these directions, please feel free to 
-post on the forums located via http://www.smaugmuds.org
-
-Tarl.
+Similarly, any occurances of the word namegen (note that this should really be namegen, not namegen_example) in the short and long descriptions of the mobile will be replaced with the mobiles new name.

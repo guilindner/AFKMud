@@ -1,5 +1,5 @@
-Special Procedures List:
-------------------------
+Special Procedures List
+=======================
 
 Last modified by Samson, 6/19/03
 

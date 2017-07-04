@@ -14,6 +14,755 @@ Climate         2 2 2
 Treasure        20 74 85 93 20 50 60 75
 #ENDAREADATA
 
+#ROOM
+Vnum      30000
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30001
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30002
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30003
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30004
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30005
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30006
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30007
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30008
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30009
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30010
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30011
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30012
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30013
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30014
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30015
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30016
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30017
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30018
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30019
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30020
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30021
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30022
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30023
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30024
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30025
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30026
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30027
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30028
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30029
+Name      Rua XX~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    300XX
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      31000
+Name      HUST~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Aqui no Hospital Universitario Santa Terezinha, todos recebem
+atendimento. Pegue uma senha e aguarde a sua vez.
+~
+#EXIT
+Direction east~
+ToRoom    300XX
+Desc      Rua XX.
+~
+#ENDEXIT
+Reset M 31000 1 31000 -1 -1 -1 100
+#ENDROOM
+
+#ROOM
+Vnum      31001
+Name      Taberna do Barbeiro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Voce esta na Taberna do Barbeiro, um ambiente agradavel para conversar,
+jogar rpg, ler livros e ate fazer a barba! Nao se esqueca de pedir uma cerveja.
+~
+#EXIT
+Direction south~
+ToRoom    30001
+Desc      Rua Felipe Schmidt.
+~
+#ENDEXIT
+Reset M 30000 1 30001 -1 -1 -1 100
+#ENDROOM
+
+#ROOM
+Vnum      31002
+Name      Corpo e Treino~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      A loja de suplementos mais completa da cidade! Pena que nunca
+tem desconto para os amigos.
+~
+#EXIT
+Direction north~
+ToRoom    30001
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+Reset M 30001 1 31001 -1 -1 -1 100
+Reset M 30002 1 31001 -1 -1 -1 100
+#ENDROOM
+
+
+
+
+
 #MOBILE
 Vnum      30000
 Keywords  Dhiego barbeiro~
@@ -29,7 +778,7 @@ Desc      Um rapaz simpatico, usando um avental de couro cheio de ferramentas.
 ~
 Nattacks  2.000000
 Stats1    -700 -1 0 0 150 100
-Stats2    5 15 5 15 2 4 0
+Stats2    55 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
 Actflags  npc nowander sentinel stayarea~
@@ -50,7 +799,7 @@ Desc      Um cara forte! Com violencia de ogro.
 ~
 Nattacks  2.000000
 Stats1    -700 -1 0 0 150 100
-Stats2    5 15 5 15 2 4 0
+Stats2    55 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
 Actflags  npc nowander sentinel stayarea~
@@ -71,73 +820,140 @@ Desc      Olhos cansados de tanto fazer montagens no photoshop.
 ~
 Nattacks  2.000000
 Stats1    -700 -1 0 0 150 100
+Stats2    55 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc nowander sentinel stayarea~
+#ENDMOBILE
+
+#MOBILE
+Vnum      30003
+Keywords  Simba dog~
+Race      dog~
+Class     Warrior~
+Gender    male~
+Position  standing~
+DefPos    standing~
+Short     O cachorro guardiao Simba~
+Long      Simba, o guardiao da residencia.
+~
+Desc      Um cachorro muito peludo, da raca ???.
+~
+Nattacks  3.000000
+Stats1    -700 -1 0 0 150 100
+Stats2    30 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc nowander sentinel stayarea~
+#ENDMOBILE
+
+#MOBILE
+Vnum      30004
+Keywords  Bela~
+Race      dog~
+Class     Warrior~
+Gender    female~
+Position  standing~
+DefPos    standing~
+Short     A cadela rebelde Bela~
+Long      Bela, uma cadela muito louca e rebelde.
+~
+Desc      No meio de tanto pelo voce pode ver uma cadela de 
+personalidade muito forte.
+~
+Nattacks  2.500000
+Stats1    -700 -1 0 0 150 100
+Stats2    25 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc nowander sentinel stayarea~
+#ENDMOBILE
+
+#MOBILE
+Vnum      31000
+Keywords  Enfermeira HUST~
+Race      human~
+Class     Warrior~
+Gender    female~
+Position  standing~
+DefPos    standing~
+Short     A enfermeira do HUST~
+Long      A enfermeira do HUST.
+~
+Desc      Uma enfermeira gorda, vestindo um jaleco sujo de sangue.
+~
+Nattacks  2.000000
+Stats1    -700 -1 0 0 150 100
 Stats2    5 15 5 15 2 4 0
 Speaks    common~
 Speaking  common~
 Actflags  npc nowander sentinel stayarea~
 #ENDMOBILE
 
-#ROOM
-Vnum      30000
-Name      Taberna do Barbeiro~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Voce esta na Taberna do Barbeiro, um ambiente agradavel para conversar,
-jogar rpg, ler livros e ate fazer a barba! Nao se esqueca de pedir uma cerveja.
+#MOBILE
+Vnum      31001
+Keywords  Policial Civil~
+Race      human~
+Class     Warrior~
+Gender    male~
+Position  standing~
+DefPos    standing~
+Short     Um policial civil~
+Long      Um policial civil cumprindo seus deveres com a cidade.
 ~
-#EXIT
-Direction south~
-ToRoom    30001
-Desc      Rua Felipe Schmidt.
+Desc      Este policial parece ser muito atento, sempre de olho nas
+mensagens do whatsapp.
 ~
-#ENDEXIT
-Reset M 30000 1 30000 -1 -1 -1 100
-#ENDROOM
+Nattacks  2.000000
+Stats1    -700 -1 0 0 150 100
+Stats2    10 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc sentinel stayarea~
+#ENDMOBILE
 
-#ROOM
-Vnum      30001
-Name      Rua Felipe Schmidt~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada, cheia de lojas. Ao norte esta a famosa Taberna do
-Barbeiro.
+#MOBILE
+Vnum      31002
+Keywords  Policial Militar~
+Race      human~
+Class     Warrior~
+Gender    male~
+Position  standing~
+DefPos    standing~
+Short     Um policial militar~
+Long      Um policial militar pronto para frear o caos.
 ~
-#EXIT
-Direction north~
-ToRoom    30000
-Desc      Taberna do Barbeiro.
+Desc      Este policial militar esta de olho em voce. Ele
+nao tem cara de muitos amigos.
 ~
-#ENDEXIT
+Nattacks  3.000000
+Stats1    -700 -1 0 0 150 100
+Stats2    20 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc sentinel stayarea~
+#ENDMOBILE
 
-#EXIT
-Direction south~
-ToRoom    30002
-Desc      Taberna do Barbeiro.
+#MOBILE
+Vnum      31003
+Keywords  Fiscal Zona Azul~
+Race      human~
+Class     Warrior~
+Gender    female~
+Position  standing~
+DefPos    standing~
+Short     Uma fiscal da zona azul~
+Long      Uma fiscal da zona azul multando a galera.
 ~
-#ENDEXIT
-
-#ENDROOM
-
-#ROOM
-Vnum      30002
-Name      Corpo e Treino~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      A loja de suplementos mais completa da cidade! Pena que nunca
-tem desconto para os amigos.
+Desc      Est fiscal esta vagando pelas ruas multando os carros 
+sem piedade! Por 10 de gold ela te da um bloquinho.
 ~
-#EXIT
-Direction north~
-ToRoom    30001
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-Reset M 30001 1 30002 -1 -1 -1 100
-Reset M 30002 1 30002 -1 -1 -1 100
-#ENDROOM
+Nattacks  2.000000
+Stats1    -700 -1 0 0 150 100
+Stats2    3 15 5 15 2 4 0
+Speaks    common~
+Speaking  common~
+Actflags  npc sentinel stayarea~
+#ENDMOBILE
 
 #ENDAREA

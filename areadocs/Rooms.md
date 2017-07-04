@@ -1,6 +1,5 @@
-=== The #ROOM block
-
-Last Modified by Samson, Nov. 26, 2014
+The #ROOM block
+===============
 
 "If you build it, they will come." - Field of Dreams
 An appropriate quote for this section. Without rooms, people will have nowwhere to go.
@@ -36,7 +35,7 @@ mini-map that is displayed in each room.
 Choose from the following table:
 
 Sector:      | Move | Description
--------------+------+-------------
+-------------|------|-------------
 air          | 1    | Midair.  Must be flying, or will fall through down exit.
 barren       | 2    | Barrens, such as rocky deserts.
 blands       | 2    | Special Blasted Lands overland sector. Should not be used for normal rooms.
@@ -85,7 +84,7 @@ A space separated list of attribute flags which affect this room.
 Choose from the following table:
 
 Flag          | Details
---------------+-------------------------------------------------------
+--------------|-------------------------------------------------------
 dark          | The room is always dark. Cannot be overridden with lights.
 death         | The room is a death trap. Anyone entering is instantly killed.
 indoors       | Room is a medium to small sized man-made structure.
@@ -540,7 +539,7 @@ ExDescKey    rabbit cage~
 ExDesc       The cage appears to be made from solid inch thick bars of mithril.  It
 has to be, to hold in the rabbit.  A large dish of lettuce and another
 of water sit on the floor of the cage, beside the rabbit.  The rabbit
-is a giant black and white checkered one, with sharp looking teeth.  
+is a giant black and white checkered one, with sharp looking teeth.
 You wonder why Dwip feeds the thing lettuce, and not people.
 ~
 #ENDEXDESC

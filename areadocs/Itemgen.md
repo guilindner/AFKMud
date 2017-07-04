@@ -1,6 +1,5 @@
-Armor and Weapon Generation Documentation
-
-Written by Dwip, 6/17/03
+Armor and Weapon Generation
+===========================
 
 This document explains AFKMud's weapons and armor generation system. The
 concept behind this system is simple - it sets up a list of armors, a list
@@ -20,9 +19,8 @@ Why use a generation system like this? Standardization. This system offers a
 chance to have all steel longswords have exactly the same stats, or all
 bronze chainmail. Sound good? Read on.
 
-----------------------------
-
 Materials:
+----------
 
 The materials list can be found in treasure.c, and the struct for it in
 treasure.h. Each material has the following attributes:
@@ -64,9 +62,8 @@ organic-flagged armor, set this as the material.
 Blackmite is another special material - all pieces of it gain a -2 save vs
 spell affect, which is applied by the weapongen code.
 
-------------------------------
-
 Armor:
+------
 
 The list of armors can be found in treasure.c, and the struct in treasure.h.
 Each armor has the following attributes:
@@ -101,9 +98,8 @@ Small Shield    | 5    | 7  | 500   |
 Medium Shield   | 5    | 10 | 1000  |
 Body Shield     | 10   | 15 | 1500  |
 
----------------------------------------------
-
 Weapons:
+--------
 
 The list of weapons can be found in treasure.c, the struct in treasure.h.
 Each weapon has the following attributes:
@@ -146,9 +142,8 @@ If moblevel 21-59 = 2
 If moblevel 60-99 = 3
 If moblevel 100 = 4
 
---------------------------------
-
 Examples:
+---------
 
 No doubt you are entirely confused at this point. Most are.
 Fortunately, there are examples.

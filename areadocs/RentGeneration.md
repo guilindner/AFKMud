@@ -1,6 +1,5 @@
-AFKMud: Automatic Rent Generation
-Written by Dwip, 5/31/03
-------------------------
+Automatic Rent Generation
+=========================
 
 This document is an effort to explain the various parts of the rent system
 used by AFKMud, and how to modify them.

@@ -1,6 +1,5 @@
-=== The #AREADATA section (also referred to as the header)
-
-Last Modified by Samson, Nov. 26, 2014
+The #AREADATA section
+=====================
 
 If a <value> or string literal field is followed by a ~, then that ~ marker is required there.
 Tags with a # in front are required, and must appear in the order in which they are specified.
@@ -155,18 +154,18 @@ There can be multiple neighbor lines in an area header.
 
 Below is an example of a completed header section:
 
-#AFKAREA
-#AREADATA
-Version         1
-Name            Halls of Creation~
-Author          Samson~
-Vnums           100 199
-Continent       immortal~
-Coordinates     472 381
-Ranges          0 1 0 115
-ResetMsg        A strange pulsing sound reverberates in the background...~
-ResetFreq       240
-Flags           nocamp noastral noportal norecall nosummon noscry noteleport~
-Treasure        20 74 85 93 20 50 60 75
-Climate         2 2 2
-#ENDAREADATA
+>#AFKAREA
+>#AREADATA
+>Version         1
+>Name            Halls of Creation~
+>Author          Samson~
+>Vnums           100 199
+>Continent       immortal~
+>Coordinates     472 381
+>Ranges          0 1 0 115
+>ResetMsg        A strange pulsing sound reverberates in the background...~
+>ResetFreq       240
+>Flags           nocamp noastral noportal norecall nosummon noscry noteleport~
+>Treasure        20 74 85 93 20 50 60 75
+>Climate         2 2 2
+>#ENDAREADATA

@@ -1,4 +1,5 @@
-=== The #OBJECT block
+The #OBJECT block
+=================
 
 Last Modified by Samson, Nov. 26, 2014
 
@@ -63,12 +64,11 @@ A space separated list of flags this object has.
 Choose from the following table:
 
 Flag          | Details
---------------+-------------------------------------------------------
+--------------|-------------------------------------------------------
 glow          | Reveals objects in dark rooms. Also nullifies invisibility.
 hum           | Object hums. Overrides darkness and invisibility.
 metal         | The object is 20% more resistant to damage.
-bless         | The object is 20% more resistant to damage.
-                This will stack with the metal flag.
+bless         | The object is 20% more resistant to damage. This will stack with the metal flag.
 organic       | The object is 20% more susceptible to damage.
 resistant     | Currently unused.
 immune        | Currently unused.
@@ -76,8 +76,7 @@ brittle       | Currently unused.
 mineral       | Currently unused.
 evil          | Currently does nothing other than display a red aura in lists.
 loyal         | The object cannot be separated from its owner in combat.
-invis         | The object is invisible. It will not be detectable without
-                magic or one of the overriding flags.
+invis         | The object is invisible. It will not be detectable without magic or one of the overriding flags. 
 hidden        | An object that can be revealed by searching a room.
 covering      | This object is covering other objects.
 buried        | An object buried in the ground. Must be dug up.
@@ -120,30 +119,19 @@ onlyranger    | Only rangers can use this.
 onlypaladin   | Only paladins can use this.
 onlyapal      | Only antipaladins can use this.
 onlynecro     | Only necromancers can use this.
-permanent     | Once acquired, this object can never be removed.
-                Suitable for use as a tattoo or a branding etc.
+permanent     | Once acquired, this object can never be removed. Suitable for use as a tattoo or a branding etc.
 nofill        | Object cannot be used as a source to fill liquid containers.
-personal      | Only the item's designated owner can use it.
-                May not be auctioned or sold.
-                Cannot be looted by others if dropped.
+personal      | Only the item's designated owner can use it. May not be auctioned or sold. Cannot be looted by others if dropped.
 deathrot      | This object will disintegrate when its owner is killed.
 deathdrop     | This object will fall to the ground when its owner is killed.
 groundrot     | This object will disintegrate if left on the ground too long.
-inventory     | Store inventory. Has an additional 20% resistance to damage
-                while still owned by a shopkeeper. When killed, if the
-                object is still on the shopkeeper, it will disintegrate.
-lodged        | Set when a projectile becomes lodged in a target.
-                Additional damage is done when the victim dislodges it.
+inventory     | Store inventory. Has an additional 20% resistance to damage while still owned by a shopkeeper. When killed, if the object is still on the shopkeeper, it will disintegrate.
+lodged        | Set when a projectile becomes lodged in a target. Additional damage is done when the victim dislodges it.
 sindhae       | Set on a prize item redeemed in the Sindhae Challenge.
 auction       | Set when an item is currently being bid on in an auction.
-donated       | Set when an object is dropped in a donation room.
-                Prevents the object from being auctioned by players or sold
-                to shopkeepers.
-clanobject    | Set when a clan/guild leader creates one of their designated
-                objects. When a weapon has this flag, it cannot be poisoned.
-clancorpse    | Designates the corpse of a clan member killed during PK.
-                Prevents various actions from being performed by someone
-                other than the person who killed them.
+donated       | Set when an object is dropped in a donation room. Prevents the object from being auctioned by players or sold to shopkeepers.
+clanobject    | Set when a clan/guild leader creates one of their designated objects. When a weapon has this flag, it cannot be poisoned.
+clancorpse    | Designates the corpse of a clan member killed during PK. Prevents various actions from being performed by someone other than the person who killed them.
 onmap         | Set when the object is on an overland map.
 proto         | An unfinished object.
 
@@ -153,7 +141,7 @@ A space separated list of body locations the object can be worn on.
 Choose from the following table:
 
 Flag   | Details
--------+------------------------------------------
+-------|------------------------------------------
 take   | The item can be picked up.
 finger | Worn on the fingers. (2 slots)
 neck   | Worn around the neck. (2 slots)

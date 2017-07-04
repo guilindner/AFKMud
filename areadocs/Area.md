@@ -1,25 +1,20 @@
-Original document written by Thoric of Realms of Despair.
-Updated at various intervals by Samson.
-
-Last Modified by Samson, Jul. 22, 2007
-
-=== Purpose of this file
-
+Purpose of this file
+--------------------
 The purpose of this file is to allow builders to create areas offline 
 if preferred, or to allow them an aid for converting areas from other 
 mud formats. Refer to any documentation from other muds to assist in 
 converting your areas to our format.
 
-=== Overview of Areas
-
+Overview of Areas
+-----------------
 An area is one piece of the world. Each area is defined in a separate 
 file. All area files require the '.are' extension for the code to load them.
 
 Because each area is defined in one file, it is easy to incorporate 
 new areas into AFKMud, or to send AFKMud areas to others for use.
 
-=== Sections of an Area
-
+Sections of an Area
+-------------------
 An area file contains the following sections:
 
     #AREADATA

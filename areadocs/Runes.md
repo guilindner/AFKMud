@@ -1,6 +1,5 @@
-Rune System Documentation
-
-Written by Dwip, 6/17/03
+Rune System
+===========
 
 This document describes the rune and runeword system used in AFKMud. For
 anyone who has played Diablo II: Lords of Destruction, the concept is
@@ -12,9 +11,8 @@ runewords, which add very powerful affects to the item as well as rename it.
 That having been said, all of the code and such for this system is found in
 treasure.c, treasure.h, and in the files runes.dat and runewords.dat.
 
---------------------------
-
-Sockets:
+Sockets
+-------
 
 Sockets are added to items in a few different ways. The random treasure
 system (see Treasure.txt) generates socketed weapons and armor as treasure.
@@ -26,9 +24,8 @@ low level items, up to 2 for mid-level items, and 3 for high level items.
 The maximum runeword size is three, so items above three are incapable of
 holding runewords. OLCed sockets can be whatever number you desire.
 
----------------------------
-
-Runes:
+Runes
+-----
 
 Runes can be viewed in two ways. First is the file runes.dat.
 An excerpt from it is below:
@@ -66,9 +63,8 @@ Please note that currently, all runes are created as part of the random
 treasure generator. There is also no way to identify runes outside of trial
 and error.
 
------------------------------------
-
-Runewords:
+Runewords
+---------
 
 Runewords can be viewed and edited by way of the file runeword.dat.
 This file is set up similarly to runes.dat:

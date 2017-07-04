@@ -1,39 +1,37 @@
-Table Documentation:
---------------------
+Table Documentation
+===================
 
-Last modified by Dwip, 6/20/03
-
-The following tables are values used in some sections of the area file.
-
-===  Liquids Table
+Liquids Table
+-------------
 
 The following is the list of liquid types for use in drink containers.
 
 Value | Liquid Type
-------------------------------
-  0       water
-  1       beer
-  2       wine
-  3       ale
-  4       dark ale
-  5       whiskey
-  6       lemonade
-  7       firebreather
-  8       local specialty
-  9       slime mold juice
-  10      milk
-  11      tea
-  12      coffee
-  13      blood
-  14      salt water
-  15      cola
-  16      mead
-  17      grog
-  18      orange juice
-  19      vodka
-  20      screwdriver
+------|------------
+  0   |    water
+  1   |    beer
+  2   |    wine
+  3   |    ale
+  4   |    dark ale
+  5   |    whiskey
+  6   |    lemonade
+  7   |    firebreather
+  8   |    local specialty
+  9   |    slime mold juice
+  10  |    milk
+  11  |    tea
+  12  |    coffee
+  13  |    blood
+  14  |    salt water
+  15  |    cola
+  16  |    mead
+  17  |    grog
+  18  |    orange juice
+  19  |    vodka
+  20  |    screwdriver
 
-===  Affect Modifiers
+Affect Modifiers
+----------------
 
 The following is the list of numbers used to add magical affects to items.
 Not to be confused with spells used on potions, scrolls, etc. See the object
@@ -135,7 +133,8 @@ Note: Weaponspells will cast each time a weapon is used, keep this in mind when
       when the item is worn or removed.
       
 
-===  Spell Slots
+Spell Slots
+-----------
 
 To find the current slot number for a spell, consult the online command
 'slookup'.
@@ -174,7 +173,7 @@ Bar ) lvl:   3 max: 95%
 Note: These values apply to levers, switches, pullchains, and buttons, in the value[0] slot.
 
 Value   | Details
---------+-------------------------------------
+--------|-------------------------------------
       0 | Trigger starts in the "up" or "in" position.
       1 | Unlocks a door in the designated room. Combines with one of the direction flags for the actual door in the room.
       2 | Locks a door in the designated direction. Combines with one of the direction flags for the actual door in the room.
@@ -201,11 +200,13 @@ Value   | Details
 4194304 | Trigger randomizes up to 6 exits in the room designated by the Value1 field.
 8388608 | If set, the trigger will return to its default state after being activated.
 
-=== Trap Flags (Add values together to combine flags)
+Trap Flags
+----------
+*Add values together to combine flags. 
 These flags govern how a trap gets set off.
 
 Value | Details
-------+--------------------------------------
+------|--------------------------------------
     0 | Attaches the trap to the room's reset list.
     1 | Attaches the trap to an object's reset list.
     2 | Trap triggers when a player enters the room.
@@ -224,21 +225,28 @@ Value | Details
 16384 | Unused.
 32768 | Trap is sprung when an object is examined.
 
-=== Trap Types
+Trap Types
+----------
 
- --------------------------------------------------------------------
- | Number | Description             | Number | Description          |
- --------------------------------------------------------------------
- |    1   | Poison gas              |    8   | Flame                |
- |    2   | Poison dart             |    9   | Explosion            |
- |    3   | Poison needle           |   10   | Acid Spray           |
- |    4   | Poison dagger           |   11   | Electric Shock       |
- |    5   | Poison arrow            |   12   | Blade                |
- |    6   | Blindness gas           |   13   | Sex change spell     |
- |    7   | Sleeping gas            |    0   | Generic trap         |
- --------------------------------------------------------------------
+Number | Description
+-------|-----------
+0      | Generic trap
+1      | Poison gas
+2      | Poison dart
+3      | Poison needle 
+4      | Poison dagger
+5      | Poison arrow
+6      | Blindness gas
+7      | Sleeping gas
+8      | Flame
+9      | Explosion       |
+10     | Acid Spray
+11     | Electric Shock
+12     | Blade
+13     | Sex change spell
 
-=== Resist/Immune/Suscept/Absorb Flags
+Resist/Immune/Suscept/Absorb Flags
+----------------------------------
 
 [Note: Don't use the numerical values, these are listed only for reference purposes in the slookup command]
 
@@ -252,7 +260,7 @@ Susceptibility increases damage by 20%.
 Absorption heals the victim rather than damaging them.
 
 Value    | Text        | Details
----------+-------------+-------------------------------------
+---------|-------------|-------------------------------------
        0 | nothing     | RISA default value - no benefits etc.
        1 | fire        | RISA for fire based attacks.
        2 | cold        | RISA for cold based attacks.

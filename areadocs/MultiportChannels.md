@@ -1,5 +1,5 @@
-AFKMud: Multiport channel setup - Quick and dirty style
--------------------------------------------------------
+Multiport channel setup
+=======================
 
 Ok. This mini-doc assumes you have the codebase successfully compiled
 with the multiport options enabled. If not, you need to go back and do
