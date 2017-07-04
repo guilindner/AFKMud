@@ -87,17 +87,11 @@ Flag          | Details
 --------------|-------------------------------------------------------
 dark          | The room is always dark. Cannot be overridden with lights.
 death         | The room is a death trap. Anyone entering is instantly killed.
-indoors       | Room is a medium to small sized man-made structure.
-                Area spells do full damage to the caster when used.
-tunnel        | Room is a tunnel - x number of players allowed.
-                (use 'redit tunnel #' to  set the number)
-cave          | Room is a medium sized indoor area, either a large man-made
-                structure, or smaller sized natural formation. Area spells
-                cause half-damage to the caster in these rooms.
-cavern        | Room is a larger naturally occurring indoor formation.
-                Area spells operate normally.
-arena         | An arena. Players may fight each other for sport here.
-                This requires administrative approval in a finished zone.
+indoors       | Room is a medium to small sized man-made structure. Area spells do full damage to the caster when used.
+tunnel        | Room is a tunnel - x number of players allowed. Use 'redit tunnel #' to  set the number
+cave          | Room is a medium sized indoor area, either a large man-made structure, or smaller sized natural formation. Area spells cause half-damage to the caster in these rooms.
+cavern        | Room is a larger naturally occurring indoor formation. Area spells operate normally.
+arena         | An arena. Players may fight each other for sport here. This requires administrative approval in a finished zone.
 petshop       | This room is a pet shop.
 donation      | This is a donation room. Items donated by players will be here.
 auction       | This room serves as an auction house.
@@ -115,34 +109,25 @@ nomagic       | Magic does not function in this room.
 nosupplicate  | Deity supplication will not work in this room.
 nomissile     | Projectiles (including magic ones) cannot be fired here.
 norecall      | Recall spells will not function in this room.
-noportal      | Portal spells will not function in this room.
-                Players also cannot make portals to this room from elsewhere.
+noportal      | Portal spells will not function in this room. Players also cannot make portals to this room from elsewhere.
 noastral      | Astral Walk spells will not function in this room.
 nodrop        | Items cannot be dropped in this room.
-nofloor       | The room has no floor. If a down exit exists and the player
-                is not flying, they will fall through and may take damage.
+nofloor       | The room has no floor. If a down exit exists and the player is not flying, they will fall through and may take damage.
 nodropall     | A player cannot drop their entire inventory at once here.
-noteleport    | Teleportation magic will not work in this room.
-                Players also cannot teleport here from other locations.
-noscry        | Scrying magic does not function in this room.
-                Players in other rooms cannot scry into this room either.
-nowhere       | Players in rooms flagged with this will not show up on the
-                "where" command list.
+noteleport    | Teleportation magic will not work in this room. Players also cannot teleport here from other locations.
+noscry        | Scrying magic does not function in this room. Players in other rooms cannot scry into this room either.
+nowhere       | Players in rooms flagged with this will not show up on the "where" command list.
 notrack       | Tracking skills is useless on a player or NPC in this room.
 nobeacon      | Player cannot use the beacon spell in this room.
 logspeech     | All speech is logged here. Useful for meetings etc.
 private       | Room is private (restricted to 2 people).
 solitary      | Only one player or NPC may occupy this room at a time.
-isolated      | An isolated room. If set, only an Implementor may occupy it.
-                Implementors can transfer people into this room if desired.
-watchtower    | Indicates the room is a watchtower, which displays a wide view
-                of the overland from it. (See Below)
+isolated      | An isolated room. If set, only an Implementor may occupy it. Implementors can transfer people into this room if desired.
+watchtower    | Indicates the room is a watchtower, which displays a wide view of the overland from it. (See Below)
 noquit        | Players cannot quit in this room.
-telenofly     | Flying players who are teleported will not be allowed
-                in this room.
+telenofly     | Flying players who are teleported will not be allowed in this room.
 map           | This room is part of the overland system.
-proto         | This room is a prototype.
-                The prototype flag should only be found on unfinished rooms.
+proto         | This room is a prototype. The prototype flag should only be found on unfinished rooms.
 
 * Has not been completely implemented yet.
 
@@ -151,10 +136,9 @@ room for the items, much like a petshop. Be sure and flag the storage room with 
 appropriate flags so no players can get in, or the mobs can get out.
 There must also be a mob in the room with the AUCTION flag.
 
------
+To create a watchtower
+---------------------- 
 
-To create a watchtower: 
- 
 in the room you want the tower connected to, make an exit in whichever 
 direction you choose, though up usually makes the most sense. 
 Flag it as overland, and optionally ( though HIGHLY recommended ) as nomob. 
@@ -176,8 +160,6 @@ redit flags map watchtower
 redit exit down 7004 
  
 That should do it, and you should end up with a nice view of the overland :)
-
------
 
 Stats        <#1> <#2> <#3> <#4> <#5>
 -------------------------------------
