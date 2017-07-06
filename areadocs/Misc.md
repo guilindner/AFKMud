@@ -65,7 +65,7 @@ A space separated list of attribute flags which affect this exit.
 Choose from the following table:
 
 Flag       | Details
------------+---------------------------------------------
+-----------|---------------------------------------------
 isdoor     | <direction> is a door. Can have several states. Defaults as open.
 closed     | A closed door.
 locked     | A closed and locked door. Can be unlocked with a lockpick.
