@@ -15,8 +15,25 @@ Treasure        20 74 85 93 20 50 60 75
 #ENDAREADATA
 
 #ROOM
-Vnum      30000
-Name      Rua XX~
+Vnum      30100
+Name      Subida do Frei Rogerio~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+
+#EXIT
+Direction south~
+ToRoom    30101
+Desc      Rua Frei Rogerio.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30101
+Name      Rua Frei Rogerio~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -24,22 +41,39 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30100
+Desc      Subida do Frei Rogerio.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
+ToRoom    30103
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30102
+Name      Avenida XV de Novembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+
+#EXIT
+Direction south~
+ToRoom    30103
 Desc      Rua XX.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30001
-Name      Rua XX~
+Vnum      30103
+Name      Avenida XV de Novembro~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -47,22 +81,516 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30102
+Desc      Avenida XV de Novembro.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
+ToRoom    30104
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30104
+Name      Rua XV de Novembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30103
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30105
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30105
+Name      Avenida XV de Novembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30104
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30106
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30106
+Name      Avenida XV de Novembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30105
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30107
+Desc      Esquina da XV com a Getulio.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30107
+Name      Esquina da XV com a Getulio~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30106
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30108
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30119
+Desc      Rua Getulio Vargas.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30108
+Name      Avenida XV de Novembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30107
+Desc      Esquina da XV com a Getulio.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30109
+Desc      Esquina da XV com a Felipe Schmidt.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30109
+Name      Esquina da XV com a Felipe Schmidt~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30108
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30110
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30116
+Desc      Rua Felipe Schmidt.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30110
+Name      Avenida XV de Novembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30109
+Desc      Esquina da XV com a Felipe Schmidt.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30111
+Desc      Inicio da XV de Novembro.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30111
+Name      Inicio da XV de Novembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30110
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30112
+Desc      Avenida Rio Branco.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30112
+Name      Avenida Rio Branco~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction east~
+ToRoom    30111
+Desc      Inicio da XV de novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30113
+Desc      Esquina da Rio Branco com Francisco Lindner.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30113
+Name      Esquina da Rio Branco com Francisco Lindner~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30114
+Desc      Rua Francisco Lindner.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    30112
+Desc      Avenida Rio Branco.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30122
+Desc      Avenida Rio Branco.
+~
+#ENDEXIT
+
+#ENDROOM
+
+#ROOM
+Vnum      30114
+Name      Rua Francisco Lindner~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30115
+Desc      Esquina da F. Lindner com F. Schmidt.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30113
+Desc      Esquina da Rio Branco com Francisco Lindner.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30115
+Name      Esquina da F. Lindner com F. Schmidt~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30117
+Desc      Taberna do Barbeiro.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    30116
+Desc      Rua Felipe Schmidt.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30114
+Desc      Rua Francisco Lindner.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30126
+Desc      Rua Felipe Schmidt.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30116
+Name      Rua Felipe Schmidt~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada, na frente do Bola 7
+~
+#EXIT
+Direction east~
+ToRoom    30109
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30115
+Desc      Esquina da F. Lindner com F. Schmidt.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30117
+Name      Rua Francisco Lindner~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30118
+Desc      Esquina da Getulio com F. Lindner.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30115
+Desc      Esquina da F. Lindner com F. Schmidt.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30118
+Name      Esquina da Getulio com F. Lindner~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma esquina movimentada,
+~
+#EXIT
+Direction north~
+ToRoom    30120
+Desc      Rua Francisco Lindner.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    30119
+Desc      Rua Getulio Vargas.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30117
+Desc      Rua Francisco Lindner.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30129
+Desc      Rua Getulio Vargas.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30119
+Name      Rua Getulio Vargas~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction east~
+ToRoom    30107
+Desc      Esquina da XV com a Getulio.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30118
+Desc      Esquina da Getulio com F. Lindner.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30120
+Name      Rua Francisco Lindner~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction east~
+ToRoom    30121
+Desc      Rua Sete de Setembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction south~
+ToRoom    30118
+Desc      Esquina da Getulio com F. Lindner.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30132
+Desc      Rua Sete de Setembro.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30121
+Name      Rua Sete de Setembro~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction east~
+ToRoom    30105
+Desc      Avenida XV de Novembro.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30120
+Desc      Rua Francisco Lindner.
+~
+#ENDEXIT
+#ENDROOM
+
+#ROOM
+Vnum      30122
+Name      Avenida Rio Branco~
+Sector    city~
+Flags     ~
+Stats     0 0 0 0 100000
+Desc      Uma rua movimentada,
+~
+#EXIT
+Direction east~
+ToRoom    30113
+Desc      Esquina da F. Lindner com Rio Branco.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30123
 Desc      Rua XX.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30002
-Name      Rua XX~
+Vnum      30123
+Name      Esquina da Salgado Filho com Rio Branco~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -70,22 +598,29 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30124
+Desc      Rua Salgado Filho.
 ~
 #ENDEXIT
 
 #EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+Direction east~
+ToRoom    30122
+Desc      Avenida Rio Branco.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30141
+Desc      Avenida Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30003
-Name      Rua XX~
+Vnum      30124
+Name      Rua Salgado Filho~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -93,22 +628,22 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30125
+Desc      Esquina da S. Filho com F. Schmidt.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30123
+Desc      Esquina da S. Filho com Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30004
-Name      Rua XX~
+Vnum      30125
+Name      Esquina da F. Schmidt com S. Filho~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -116,45 +651,59 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30127
+Desc      Rua Salgado Filho.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    30126
+Desc      Rua Salgado Filho.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30124
+Desc      Rua Salgado Filho.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30140
+Desc      Rua Felipe Schmidt.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30005
-Name      Rua XX~
+Vnum      30126
+Name      Rua Felipe Schmidt~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
 Desc      Uma rua movimentada,
 ~
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30115
+Desc      Esquina da F. Lindner com F. Schmidt.
 ~
 #ENDEXIT
 
 #EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+Direction west~
+ToRoom    30125
+Desc      Esquina da F. Schmidt com S. Filho.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30006
-Name      Rua XX~
+Vnum      30127
+Name      Rua Salgado Filho~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -162,22 +711,22 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30128
+Desc      Esquina da G. Vargas com S. Filho.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30125
+Desc      Esquina da F. Schmidt com S. Filho.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30007
-Name      Rua XX~
+Vnum      30128
+Name      Esquina da G. Vargas com S. Filho~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -185,45 +734,58 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30130
+Desc      Rua Salgado Filho.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    30129
+Desc      Rua Salgado Filho.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30127
+Desc      Rua Salgado Filho.
+~
+#ENDEXIT
+
+#EXIT
+Direction west~
+ToRoom    30137
+Desc      Rua Salgado Filho.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30008
-Name      Rua XX~
+Vnum      30129
+Name      Rua Getulio Vargas~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
 Desc      Uma rua movimentada,
 ~
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30118
+Desc      Esquina da F. Lindner com G. Vargas.
 ~
 #ENDEXIT
-
 #EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+Direction west~
+ToRoom    30128
+Desc      Esquina da S. Filho com G. Vargas.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30009
-Name      Rua XX~
+Vnum      30130
+Name      Rua Salgado Filho~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -231,114 +793,119 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30131
+Desc      Esquina da S. Filho com S. de Setembro.
 ~
 #ENDEXIT
-
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30128
+Desc      Esquina da S. Filho com G. Vargas.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30010
-Name      Rua XX~
+Vnum      30131
+Name      Esquina da S. Filho com S. de Setembro~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
 Desc      Uma rua movimentada,
 ~
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30132
+Desc      Rua Sete de Setembro.
 ~
 #ENDEXIT
-
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30130
+Desc      Rua Salgado Filho.
+~
+#ENDEXIT
+#EXIT
+Direction west~
+ToRoom    30133
+Desc      Rua Sete de Setembro.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30011
-Name      Rua XX~
+Vnum      30132
+Name      Rua Sete de Setembro~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
 Desc      Uma rua movimentada,
 ~
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30120
+Desc      Rua Francisco Lindner.
 ~
 #ENDEXIT
 
 #EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+Direction west~
+ToRoom    30131
+Desc      Rua Esquina da S. Filho com S. de Setembro.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30012
-Name      Rua XX~
+Vnum      30133
+Name      Rua Sete de Setembro~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
 Desc      Uma rua movimentada,
 ~
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30131
+Desc      Esquina da S. Filho com S. de Setembro.
 ~
 #ENDEXIT
 
 #EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+Direction east~
+ToRoom    30134
+Desc      Esquina da S. de Setembro com a Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30013
-Name      Rua XX~
+Vnum      30134
+Name      Esquina da S. de Setembro com a Rio Branco~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
+Desc      Uma esquina movimentada,
 ~
+
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30133
+Desc      Rua Sete de Setembro.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30135
+Desc      Avenida Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30014
-Name      Rua XX~
+Vnum      30135
+Name      Avenida Rio Branco~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -346,22 +913,22 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30134
+Desc      Esquina da S. de Setembro com a Rio Branco.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30136
+Desc      Esquina da G. Vargas com Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30015
-Name      Rua XX~
+Vnum      30136
+Name      Esquina da G. Vargas com Rio Branco~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -369,45 +936,52 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30135
+Desc      Avenida Rio Branco.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    30137
+Desc      Rua Felipe Schmidt.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30138
+Desc      Avenida Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30016
-Name      Rua XX~
+Vnum      30137
+Name      Rua Getulio Vargas~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
 Desc      Uma rua movimentada,
 ~
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30128
+Desc      Esquina da S. Filho com G. Vargas.
 ~
 #ENDEXIT
 
 #EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+Direction west~
+ToRoom    30136
+Desc      Esquina da G. Vargas com Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30017
-Name      Rua XX~
+Vnum      30138
+Name      Avenida Rio Branco~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -415,22 +989,22 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30136
+Desc      Esquina da G. Vargas com Rio Branco.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30139
+Desc      Esquina da F. Schmidt com Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30018
-Name      Rua XX~
+Vnum      30139
+Name      Esquina da F. Schmidt com Rio Branco~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -438,45 +1012,52 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30138
+Desc      Avenida Rio Branco.
+~
+#ENDEXIT
+
+#EXIT
+Direction east~
+ToRoom    30140
+Desc      Rua Felipe Schmidt.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30141
+Desc      Avenida Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30019
-Name      Rua XX~
+Vnum      30140
+Name      Rua Felipe Schmidt~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
 Desc      Uma rua movimentada,
 ~
 #EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+Direction east~
+ToRoom    30125
+Desc      Esquina da S. Filho com F. Schmidt.
 ~
 #ENDEXIT
 
 #EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+Direction west~
+ToRoom    30139
+Desc      Esquina da F. Schmidt com Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
 #ROOM
-Vnum      30020
-Name      Rua XX~
+Vnum      30141
+Name      Avenida Rio Branco~
 Sector    city~
 Flags     ~
 Stats     0 0 0 0 100000
@@ -484,225 +1065,23 @@ Desc      Uma rua movimentada,
 ~
 #EXIT
 Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
+ToRoom    30139
+Desc      Esquina da F. Schmidt com Rio Branco.
 ~
 #ENDEXIT
 
 #EXIT
 Direction south~
-ToRoom    300XX
-Desc      Rua XX.
+ToRoom    30123
+Desc      Esquina da S. Filho com Rio Branco.
 ~
 #ENDEXIT
 #ENDROOM
 
-#ROOM
-Vnum      30021
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
 
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
 
-#ROOM
-Vnum      30022
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
 
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
 
-#ROOM
-Vnum      30023
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
-
-#ROOM
-Vnum      30024
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
-
-#ROOM
-Vnum      30025
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
-
-#ROOM
-Vnum      30026
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
-
-#ROOM
-Vnum      30027
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
-
-#ROOM
-Vnum      30028
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
-
-#ROOM
-Vnum      30029
-Name      Rua XX~
-Sector    city~
-Flags     ~
-Stats     0 0 0 0 100000
-Desc      Uma rua movimentada,
-~
-#EXIT
-Direction north~
-ToRoom    300XX
-Desc      Taberna do Barbeiro.
-~
-#ENDEXIT
-
-#EXIT
-Direction south~
-ToRoom    300XX
-Desc      Rua XX.
-~
-#ENDEXIT
-#ENDROOM
 
 #ROOM
 Vnum      31000

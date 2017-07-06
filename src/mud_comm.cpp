@@ -3944,7 +3944,7 @@ void setup_newbie( char_data * ch, bool NEWLOGIN )
     ch->pcdata->age = 17;
     ch->pcdata->age_bonus = 0;
 
-    ch->max_hit = 10;
+    ch->max_hit = 20;
     ch->hit = ch->max_hit;
 
     ch->max_mana = 100;

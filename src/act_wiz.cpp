@@ -2792,7 +2792,7 @@ CMDF( do_balzhur )
     victim->print( "&[immortal]You hear an ungodly sound in the distance that makes your blood run cold!\r\n" );
     echo_all_printf( ECHOTAR_ALL, "&[immortal]The Wedgy screams, 'You are MINE %s!!!'", victim->name );
     victim->exp = 2000;
-    victim->max_hit = 10;
+    victim->max_hit = 20;
     victim->max_mana = 100;
     victim->max_move = 150;
     victim->gold = 0;
